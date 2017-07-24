@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://JoanneBogart@github.com/JoanneBogart/minicontainerSettings.git
+	branch = master
+	commit = baa6f92c0984ea5cba77f2c85b8599744785f24b
+	parent = c01b390b907c1fad13353e7edf2283821945baaa
+	cmdver = 0.3.1
