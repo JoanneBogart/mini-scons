@@ -1,0 +1,13 @@
+# -*- python -*-
+# $Header: /nfs/farm/g/glast/u52/cvs_test/cvs/ScienceTools_User-scons/containerSettings/package.scons,v 1.1.1.1 2017/05/06 00:49:47 jrb Exp $
+
+Import('baseEnv')
+
+# ScienceTools setup includes Pfiles; not needed for other containers
+baseEnv['usePfiles'] = True
+
+baseEnv.AppendUnique(CPPDEFINES = ['ScienceTools', 'BUILD_WITHOUT_ROOT', 'mini'])
+baseEnv['CONTAINERNAME'] = 'mini'
+
+if baseEnv['PLATFORM'] == "posix":
+    baseEnv.AppendUnique(CPPDEFINES=['TRAP_FPE'])
