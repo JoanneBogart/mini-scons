@@ -1,0 +1,82 @@
+** @file release.notes
+ * Package xmlBase
+ * Coordinator: Joanne Bogart
+ *
+ *                  EOH
+
+ xmlBase-05-07-01 31-Aug-2016    jrb force LATEST build of GR and ST; no actual change
+ xmlBase-05-07-00 30-Mar-2016    jrb Updates from Joe for Xerces3.  Also cosmetic clean-up
+ xmlBase-05-06-01 17-Apr-2013    jrb Add app for quick check whether xml file parses correctly
+ xmlBase-05-06-00 16-Aug-2012    jrb support for Windows no-installed-headers
+ xmlBase-05-05-10 20-Dec-2010    jrb add system include for gcc 4.4 compile
+ xmlBase-05-05-09 24-Feb-2010    jrb fix linking for mac
+ xmlBase-05-05-08 24-Feb-2010    jrb fix linking for mac
+ xmlBase-05-05-07 22-Feb-2010    jrb correct use of xxLib for libEnv
+ xmlBase-05-05-06 17-Dec-2009    jcv Fix path in entity_test for FSSC.
+ xmlBase-05-05-05 11-Sep-2009    jrb testing tagging code
+ xmlBase-05-05-04 10-Sep-2009    jrb Fix compiler warning
+   v5r5p3 15-Jul-2009  jrb  Update SConscript
+   v5r5p2 19-Dec-2008  jrb  Fix to test_mem for meaningful return code
+   v5r5p1 05-Sep-2008  eac  Added Dom::makeComment to allow for putting comments in xml
+   v5r5   28-Mar-2008  jrb  Add utilities to Dom for creating documents;
+                            move Xerces init from XmlParser class to Dom
+   v5r4p3 29-Nov-2007  jrb (for Navid).  Use new environment variable scheme
+   v5r4p2 28-Oct-2007  jc   allow precision to be set in Dom::addAttribute 
+   v5r4p1  1-Oct-2007  jrb  (for Navid) switch over to commonUtilities routines
+                            for paths wherever possible
+   v5r4   19-Apr-2007  jrb  Add XmlParser::setSchemaLocation function
+   v5r3     3-Feb-2006 jrb  Add a couple utilities to Dom class: one to strip
+                            out comments in in-memory (DOM) representation of
+                            XML document, another to write out DOM to a file
+   v5r2     2-Jun-2005 jrb  Add ability to validate files w.r.t. XML schema
+   v5r1p2   4-Jan-2005 jrb  Rename test program so RM will recognize it
+   v5r1p1   3-Jan-2005 jrb  Fix a couple things for Windows
+   v5r1p0  29-Dec-2004 jrb  Fix a couple more things so all test programs run
+   v5r1    29-Dec-2004 jrb  Copy of xml package, v5r0, with internal references,
+                            namespace names, etc., converted for xmlBase
+ * v5r0    10-Nov-2004 jrb  Upgrades for Xerces 2.6.0
+ * v4r11p2  8-Sep-2004 jrb  Get rid of deprecated <strstream>
+ * v4r11p1 16-Jun-2004 jrb  Alternate fix to compile problem: #include <string>
+ *                          (should never have worked without it!)
+ * v4r110   1-Jun-2004 jrb  Fix Windows compile problem in XmlErrorHandler.h
+ * v4r11  24-May-2004  jrb  Add Dom::getFloatsAttribute utility method
+ * v4r10  14-May-2004  jrb  1. get rid of version spec. for GlastPolicy use
+ *   2. Add new methods Dom::getIntsAttribute, Dom::getDoublesAttribute
+ *   3. Prefer sstream to strstream if available in Dom::addAttribute methods
+ * v4r9p0 20-Apr-2004  jrb  Use GlastPolicy v6r*
+ * v4r9    8-Mar-2004  jrb  1)New method Dom::getTextContent 2)XmlParser::parse
+ *                          will tranlate env. variables in filename
+ * v4r8p1 17-Feb-2004  jrb  Small change in Dom.cxx to keep gcc 3.3 happy
+ * v4r8p0  2-Feb-2004  jrb  Correct prototypes for exception classes
+ * v4r8   27-Jan-2004  jrb  Add more methods to Dom class, needed by detModel
+ * v4r7   20-Jan-2004  jrb  Add more methods to Dom class:
+ *    getElementById, getDescendantsByTagName, hasAttribute
+ * v4r6   13-Jan-2004  jrb  
+ *     1. Add getDoubleAttribute, getIntAttribute to Dom class
+ *     2. Internal changes to IFile to use facilities::Util conversion methods
+ *     3. Make old test.exe into official test program test_xml.exe
+ * v4r5    5-Jan-2004  jrb  Add new utilities to Dom class 
+ *                          add (and use) exception classes 
+ *                          add docType argument to parse methods
+ * v4r4   15-Dec-2003  jrb 
+ *  1. Define and use typedef names to wrap Xerces classes
+ *  2. Eliminate obsolete classes Persistence, IFileManager
+ *  3. IFile maintenance + new IFile test program
+ * v4r3p2 06-Oct-2003  jrb Trivial but mysterious mod to get compilation with
+                           gcc 3.2
+ * v4r3p1 07-Aug-2003  jrb for tk more requirements updates 
+ * v4r3p0 07-Aug-2003  tk    update requirements for GlastRelease v5r2p4 
+ * v4r3   20-Jul-2003  thb   create cmt folder; minor vc8 fix in Persistence
+ * v4r2p5 27-Jun-2003  jrb   Use ld_library_path pattern in requirements
+ * v4r2p4 27-Jun-2003  jrb   Improve error handling when attempting parse
+ * v4r2p3 17-Apr-2003  jrb   Add author line
+ * v4r2p2 14-Mar-2003  jrb   Add xercesc/ to start of path for Xerces includes
+ * v4r2p1 11-Mar-2003  jrb   Use new XMLEXT tag, pointing to Xerces 1.7.0
+ * v4r2p0 21-Jan-2003  jrb   Bug fix to EResolver::~EResolver
+ * v4r2   ??-Jan-2003  als   New style requirements for GlastRelease
+ * v4r1p5 30-Oct-2002  jrb   Fix for gcc3 and other minor clean-up
+ * v4r1p4 23-May-2002  jrb   Bug fix in XmlErrorHandler.cxx
+ * v4r1p3 04-Apr-2002  jrb   Get rid of unnecessary packageShr pattern
+ * v4r1p2 19-Mar-2002  jrb   More comprehensive fix for Dom.cxx bug\n
+ * v4r1p1 15-Mar-2002  THB   fix bug introduced in v4r1\n
+ */

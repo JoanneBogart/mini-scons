@@ -1,0 +1,144 @@
+<?xml version="1.0" ?>
+<!--  test-arith.xml .. for use with xml package test program  -->
+<!--  $Id$ -->
+<!-- The included dtd has been extracted from the "real" dtd. In
+     particular, everything needed to deal with constants and
+     arithmetic has been included.
+ -->
+<!DOCTYPE constants [
+  <!ELEMENT  constants (version, primary, derived?) >
+  <!ELEMENT  version EMPTY >
+  <!ATTLIST  version major NMTOKEN #REQUIRED >
+  <!ATTLIST  version minor NMTOKEN #REQUIRED >
+
+  <!ELEMENT overview (#PCDATA) >
+  <!ELEMENT primary (primCategory*) >
+
+  <!ELEMENT primCategory (overview, (prim*)) >
+  <!ATTLIST primCategory name ID #REQUIRED>
+
+
+  <!ELEMENT prim (#PCDATA) >  <!-- Should be text describing the constant -->
+  <!ATTLIST prim name ID #REQUIRED 
+               value CDATA #REQUIRED
+               type (int | float | double | string ) "double"
+               uType (length | angle | count | mat | none) "length"
+               unitLength ( mm | m | cm) "mm"
+               unitAngle  (deg | mrad ) "deg"
+ >
+
+  <!ELEMENT derived (derCategory*) >
+
+  <!ELEMENT derCategory ((const*)) >
+  <!ATTLIST derCategory name    ID #REQUIRED
+                        save    (true | false) "false" >
+  <!ENTITY  % operator "mul | quo | add | minus | uminus | max" >
+
+<!--  <!ELEMENT const ((%operator;)? ) > -->
+  <!ELEMENT const (refer | (mul | quo | add | minus | uminus | max)? ) >
+  <!ATTLIST const name ID #IMPLIED
+                 value NMTOKEN #IMPLIED 
+                 uType (length | angle | count | mat | none) "length"
+                 unitLength ( mm | m | cm) "mm"
+                 unitAngle  (deg | mrad ) "deg"
+   >
+  <!-- possible "operand" is
+          operations, i.e., their results
+          an in-place const with a value
+          a reference to a const or to a fund
+    -->
+<!--  <!ENTITY  % operand "%operator; | const | refer " > -->
+
+  <!ELEMENT refer EMPTY >
+  <!ATTLIST refer refTo IDREF #REQUIRED>
+  <!ELEMENT add ( (mul | quo | add | minus | uminus | max | const | refer) , 
+                  (mul | quo | add | minus | uminus | max | const | refer)+ ) >
+  <!ELEMENT mul ((mul | quo | add | minus | uminus | max | const | refer),
+                 (mul | quo | add | minus | uminus | max | const | refer)+ ) >
+  <!ELEMENT max ((mul | quo | add | minus | uminus | max | const | refer), 
+                 (mul | quo | add | minus | uminus | max | const | refer)+ ) >
+  <!ELEMENT minus ((mul | quo | add | minus | uminus | max | const | refer), 
+                   (mul | quo | add | minus | uminus | max | const | refer) ) >
+  <!ELEMENT quo ((mul | quo | add | minus | uminus | max | const | refer), 
+                 (mul | quo | add | minus | uminus | max | const | refer) ) >
+  <!ELEMENT uminus (mul | quo | add | minus | uminus | max | const | refer)  >
+ ]
+>
+
+<!-- The constants -->   
+<constants>
+  <version major="0" minor="0" />
+  <primary>
+    <primCategory name="global" >
+      <overview>Here's the required overview</overview>
+      <prim name="one" value="1.0" unitLength="cm">Here's a constant in cm</prim>
+      <prim name="two" value="2.0">Here's a 2nd constant</prim>
+      <prim name="three" value="3.0">Here's a 3rd constant</prim>
+      <prim name="four" value="4.0">Here's a 4th constant</prim>
+      <prim name="fourPointFive" value="4.5">Here's a 5th constant</prim>
+    </primCategory>
+  </primary>
+  <derived>
+    <derCategory name="allDerived" >
+      <const name="der1" >
+	<add>
+	  <refer refTo="one" />
+	  <const value="6.0" />
+	</add>
+      </const>
+
+      <const name="der2" >
+	<uminus>
+	  <refer refTo="fourPointFive" />
+	</uminus>
+      </const>
+
+      <const name="der3" >
+	<mul>
+	  <refer refTo="two" />
+	  <refer refTo="three" />
+	  <refer refTo="four" />
+	</mul>
+      </const>
+
+      <const name="negder3" >
+	<uminus>
+	  <refer refTo="der3" />
+	</uminus>
+      </const>
+
+      <const name="der4" >
+	<minus>
+	  <refer refTo="four" />
+	  <add>
+	    <const value="0.5" unitLength="m" />
+	    <refer refTo="two" />
+	  </add>
+	</minus>
+      </const>
+
+      <const name="der5" >
+	<quo>
+	  <refer refTo="three" />	  
+	  <refer refTo="fourPointFive" />
+	</quo>
+      </const>
+
+      <const name="der6" >
+	<max>
+	  <const value="2" />
+	  <minus>
+	    <refer refTo="four" />
+	    <const value="3.5" />
+	  </minus>
+	  <refer refTo="der5" />
+	</max>
+      </const>
+
+      <const name="der7">
+        <refer refTo="der2" />
+      </const>
+
+    </derCategory>
+  </derived>
+</constants>

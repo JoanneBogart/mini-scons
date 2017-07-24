@@ -1,0 +1,2727 @@
+Old ChangeLog from ancestor xml package, kept here for easy reference
+
+------------------------------------------------------------
+User: jrb  Wed Nov 10 16:37:34 PST 2004
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release v5r0
+    *
+------------------------------------------------------------
+User: jrb  Wed Nov 10 10:55:52 PST 2004
+xml/xmldata
+
+Added Files:
+	simple.dtd simpleDoc.xml simpleExternal.xml 
+Log Message:
+Paraphernalia for test that Xerces handles external entities as it should
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Nov 10 10:55:28 PST 2004
+xml/src/test
+
+Added Files:
+	entity_test.cxx 
+Log Message:
+Test that Xerces handles external entities as it should
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Nov 10 09:40:24 PST 2004
+xml/xml/docMan
+
+Modified Files:
+	DocClient.h DocMan.h 
+Log Message:
+Upgrade for Xerces 2.6.0
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Nov 10 09:40:08 PST 2004
+xml/xml
+
+Modified Files:
+	Dom.h EResolver.h IFile.h XmlErrorHandler.h XmlParser.h 
+Log Message:
+Upgrade for Xerces 2.6.0
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Nov 10 09:39:42 PST 2004
+xml/src/test
+
+Modified Files:
+	test_mem.cxx 
+Log Message:
+Upgrade for Xerces 2.6.0
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Nov 10 09:39:28 PST 2004
+xml/src/docMan
+
+Modified Files:
+	DocMan.cxx 
+Log Message:
+Upgrade for Xerces 2.6.0
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Nov 10 09:39:13 PST 2004
+xml/src
+
+Modified Files:
+	Dom.cxx EResolver.cxx IFile.cxx XmlErrorHandler.cxx 
+	XmlParser.cxx main.cxx 
+Log Message:
+Upgrade for Xerces 2.6.0
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Nov 10 09:38:50 PST 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Upgrade for Xerces 2.6.0
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Sep  8 12:42:23 PDT 2004
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Wed Sep  8 12:41:36 PDT 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r11p2
+    *
+------------------------------------------------------------
+User: jrb  Wed Sep  8 12:41:14 PDT 2004
+xml/src
+
+Modified Files:
+	IFile.cxx 
+Log Message:
+Change <strstream> include to <sstream>
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Jun 16 15:44:40 PDT 2004
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Wed Jun 16 15:42:38 PDT 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r11p1
+    *
+------------------------------------------------------------
+User: jrb  Tue Jun  1 14:49:06 PDT 2004
+xml/xml
+
+Modified Files:
+	XmlErrorHandler.h 
+Log Message:
+A better solution:  #include <string>  
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Jun  1 13:37:07 PDT 2004
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Tue Jun  1 13:36:10 PDT 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r11p0
+    *
+------------------------------------------------------------
+User: jrb  Tue Jun  1 13:28:46 PDT 2004
+xml/xml
+
+Modified Files:
+	XmlErrorHandler.h 
+Log Message:
+.cvsignore and cmt/.cvsignore:  Ignore Windows-specific machinery
+XmlErrorHandler.h: Replace std::string + operator (not supported on Windows) with append
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Jun  1 13:28:46 PDT 2004
+xml/cmt
+
+Modified Files:
+	.cvsignore 
+Log Message:
+.cvsignore and cmt/.cvsignore:  Ignore Windows-specific machinery
+XmlErrorHandler.h: Replace std::string + operator (not supported on Windows) with append
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Jun  1 13:28:45 PDT 2004
+xml
+
+Modified Files:
+	.cvsignore 
+Log Message:
+.cvsignore and cmt/.cvsignore:  Ignore Windows-specific machinery
+XmlErrorHandler.h: Replace std::string + operator (not supported on Windows) with append
+
+    *
+------------------------------------------------------------
+User: jrb  Mon May 24 10:29:55 PDT 2004
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Mon May 24 10:29:13 PDT 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r11
+    *
+------------------------------------------------------------
+User: jrb  Wed May 19 15:22:36 PDT 2004
+xml/xml
+
+Modified Files:
+	Dom.h 
+Log Message:
+Add yet another utility:  getFloatsAttribute
+
+    *
+------------------------------------------------------------
+User: jrb  Wed May 19 15:22:22 PDT 2004
+xml/src
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+Add yet another utility:  getFloatsAttribute
+
+    *
+------------------------------------------------------------
+User: jrb  Fri May 14 18:02:42 PDT 2004
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Fri May 14 18:00:27 PDT 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r10
+    *
+------------------------------------------------------------
+User: jrb  Fri May 14 17:59:39 PDT 2004
+xml/xmldata
+
+Modified Files:
+	test.xml 
+Log Message:
+Include examples of attributes whose values are blank-separated lists 
+to test new Dom methods
+
+    *
+------------------------------------------------------------
+User: jrb  Fri May 14 17:58:57 PDT 2004
+xml/xml
+
+Modified Files:
+	Dom.h 
+Log Message:
+Add new methods getIntsAttribute, getDoublesAttribute to parse
+blank-separated lists of numbers 
+
+    *
+------------------------------------------------------------
+User: jrb  Fri May 14 17:58:39 PDT 2004
+xml/src
+
+Modified Files:
+	Dom.cxx main.cxx 
+Log Message:
+Dom.cxx  Add new methods getIntsAttribute, getDoublesAttribute to parse
+blank-separated lists of numbers 
+
+    *
+------------------------------------------------------------
+User: jrb  Fri May 14 17:57:39 PDT 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Get rid of version specification on use of GlastPolicy 
+
+    *
+------------------------------------------------------------
+User: jrb  Thu May  6 21:40:31 PDT 2004
+xml/xmldata
+
+Modified Files:
+	test-bad.xml 
+Log Message:
+Modify bad test case slightly
+
+    *
+------------------------------------------------------------
+User: jrb  Thu May  6 21:39:54 PDT 2004
+xml/xml
+
+Modified Files:
+	XmlErrorHandler.h XmlParser.h 
+Log Message:
+XmlParser.h : move out definition of ParseException
+XmlErrorHandler.h: optional throwErrors arg to constructor, move in
+               definition of ParseException
+
+    *
+------------------------------------------------------------
+User: jrb  Thu May  6 21:38:27 PDT 2004
+xml/src
+
+Modified Files:
+	XmlErrorHandler.cxx XmlParser.cxx 
+Log Message:
+XmlParser.cxx  : pass throwErrors variable to XmlErrorHandler constructor
+XmlErrorHandler: respect throwErrors variable
+
+    *
+------------------------------------------------------------
+User: jrb  Thu May  6 17:59:41 PDT 2004
+xml/src
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+transToChar routines throw exception if passed null pointer argument
+
+    *
+------------------------------------------------------------
+User: jrb  Thu May  6 16:43:04 PDT 2004
+xml/src
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+Get rid of assert's.  They're if anything a hindrance.
+
+    *
+------------------------------------------------------------
+User: jrb  Thu May  6 16:22:20 PDT 2004
+xml/xmldata
+
+Added Files:
+	test-bad.xml 
+Log Message:
+Add xml file with syntax error for testing
+
+    *
+------------------------------------------------------------
+User: jrb  Thu May  6 16:21:50 PDT 2004
+xml/xml
+
+Modified Files:
+	XmlParser.h 
+Log Message:
+Add optional bool arg. to constructor. If true parser will
+  throw xml::ParseException upon error rather than writing to std::cerr
+
+    *
+------------------------------------------------------------
+User: jrb  Thu May  6 16:21:28 PDT 2004
+xml/src
+
+Modified Files:
+	XmlParser.cxx main.cxx 
+Log Message:
+XmlParser.cxx: Add optional bool arg. to constructor. If true parser will
+  throw xml::ParseException upon error rather than writing to std::cerr
+main.cxx:      modify to test new XmlParser feature 
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Apr 20 09:21:00 PDT 2004
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Tue Apr 20 09:20:10 PDT 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r9p0
+    *
+------------------------------------------------------------
+User: jrb  Tue Apr 20 09:16:03 PDT 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Use v6r* of GlastPolicy so as not to break LATEST
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Mar  8 16:41:50 PST 2004
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Mon Mar  8 16:39:27 PST 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r9
+    *
+------------------------------------------------------------
+User: jrb  Mon Mar  8 16:38:37 PST 2004
+xml/xml
+
+Modified Files:
+	Dom.h 
+Log Message:
+Dom.h        new utility method getTextContent(DOM_Element e)
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Mar  8 16:38:19 PST 2004
+xml/src
+
+Modified Files:
+	Dom.cxx XmlParser.cxx 
+Log Message:
+XmlParser.cxx:  parse method will translate environment variables in filename
+Dom.cxx:        new utility method getTextContent(DOM_Element e)
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Feb 17 13:27:48 PST 2004
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Tue Feb 17 13:27:13 PST 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r8p1
+    *
+------------------------------------------------------------
+User: jrb  Tue Feb 17 13:18:11 PST 2004
+xml/src
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+Minor change to keep gcc 3.3 happy
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Feb  2 14:52:39 PST 2004
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Mon Feb  2 14:51:49 PST 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r8p0
+    *
+------------------------------------------------------------
+User: jrb  Mon Feb  2 14:51:21 PST 2004
+xml/xml
+
+Modified Files:
+	Dom.h 
+Log Message:
+Fix prototype of exception classes for gcc 3.2 (somehow got
+left out of previous commit)
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 27 16:54:38 PST 2004
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 27 16:54:01 PST 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r8
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 27 16:53:14 PST 2004
+xml/xml
+
+Modified Files:
+	Dom.h 
+Log Message:
+Add a couple more utilities
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 27 16:52:56 PST 2004
+xml/src
+
+Modified Files:
+	Dom.cxx IFile.cxx main.cxx 
+Log Message:
+Dom.cxx               Add a couple more utilities
+IFile.cxx, main.cxx   Minor clean-up
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 20 22:42:11 PST 2004
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 20 22:39:29 PST 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r7
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan 19 23:44:43 PST 2004
+xml/src
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+Allow wildcard for checkTagName argument
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Jan 15 17:05:19 PST 2004
+xml/xml
+
+Modified Files:
+	Dom.h 
+Log Message:
+Still more static methods for Dom:  
+  getElementById and getDescendantsByTagName
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Jan 15 17:04:54 PST 2004
+xml/src
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+Still more static methods for Dom:  
+  getElementById and getDescendantsByTagName
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Jan 14 13:59:12 PST 2004
+xml/xml
+
+Modified Files:
+	Dom.h 
+Log Message:
+Add new utility Dom::hasAttribute; checks for presence of attribute
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Jan 14 13:58:55 PST 2004
+xml/src
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+Add new utility Dom::hasAttribute; checks for presence of attribute
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 13 13:15:43 PST 2004
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 13 13:13:29 PST 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r6
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 13 13:11:31 PST 2004
+xml/src/test
+
+Modified Files:
+	test_IFile.cxx 
+Log Message:
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 13 13:11:00 PST 2004
+xml/src
+
+Modified Files:
+	IFile.cxx 
+Log Message:
+Use facilities::Util conversion routines rather than doing it ourselves 
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 13 13:10:22 PST 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Make one of the test programs official. Tests only some of package's
+functionality, though.
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan 12 23:09:51 PST 2004
+xml/xmldata
+
+Modified Files:
+	test.xml 
+Log Message:
+Modify for testing of getDoubleAttribute and getIntAttribute
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan 12 23:08:48 PST 2004
+xml/xml
+
+Modified Files:
+	Dom.h 
+Log Message:
+Add static getDoubleAttribute and getIntAttribute methods to Dom class
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan 12 23:08:18 PST 2004
+xml/src
+
+Modified Files:
+	Dom.cxx main.cxx 
+Log Message:
+Add static getDoubleAttribute and getIntAttribute methods to Dom class
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan  5 17:08:22 PST 2004
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan  5 17:05:37 PST 2004
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r5
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan  5 17:03:20 PST 2004
+xml/xml/docMan
+
+Modified Files:
+	DocMan.h 
+Log Message:
+New docType argument for DocMan::parse
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan  5 17:02:55 PST 2004
+xml/xml
+
+Modified Files:
+	Dom.h XmlParser.h 
+Log Message:
+Dom.h    New utilities Dom::checkTagName, Dom::getChildrenByTagName.
+         New base exception class DomException and derived class NullNode
+XmlParser.h Add docType argument to XmlParser::parse methods
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan  5 17:01:27 PST 2004
+xml/src/docMan
+
+Modified Files:
+	DocMan.cxx 
+Log Message:
+Add new docType argument to DocMan::parse
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan  5 16:59:39 PST 2004
+xml/src
+
+Modified Files:
+	Dom.cxx XmlParser.cxx mainpage.h 
+Log Message:
+Dom.cxx   Add new utilities checkTagName, getChildrenByTagName; make
+          use of new exception class NullNode in many utilities in
+          case caller has passed in a null argument.
+XmlParser.cxx  Add new optional argument to parse method, allowing caller
+          to specify expected docType.
+mainpage.h Include a bit more information about use of IFile.
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Dec 15 15:40:21 PST 2003
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Mon Dec 15 15:38:28 PST 2003
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r4
+    *
+------------------------------------------------------------
+User: jrb  Mon Dec 15 15:35:52 PST 2003
+xml/xmldata
+
+Added Files:
+	ifile.dtd myIFile.xml 
+Log Message:
+Add input files for new test_IFile application
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Dec 15 15:35:12 PST 2003
+xml/xml/docMan
+
+Modified Files:
+	DocClient.h DocMan.h 
+Log Message:
+Use typedef names for Xerces classes (e.g. DomElement instead of
+DOM_Element) as first step in migration plan
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Dec 15 15:34:53 PST 2003
+xml/xml
+
+Modified Files:
+	Dom.h IFile.h XmlParser.h 
+Removed Files:
+	IFileManager.h Persistence.h 
+Log Message:
+1. Use typedef names for Xerces classes (e.g. DomElement instead of
+   DOM_Element) as first step in migration plan
+2. Remove obsolete classes IFileManager, Persistence
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Dec 15 15:34:26 PST 2003
+xml/src/test
+
+Modified Files:
+	test_mem.cxx 
+Added Files:
+	test_IFile.cxx 
+Log Message:
+1. Use typedef names for Xerces classes (e.g. DomElement instead of
+   DOM_Element) as first step in migration plan
+2. New test program for IFile class
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Dec 15 15:33:54 PST 2003
+xml/src/docMan
+
+Modified Files:
+	DocMan.cxx 
+Log Message:
+Use typedef names for Xerces classes (e.g. DomElement instead of
+DOM_Element) as first step in migration plan
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Dec 15 15:33:30 PST 2003
+xml/src
+
+Modified Files:
+	Dom.cxx IFile.cxx XmlParser.cxx main.cxx 
+Removed Files:
+	IFileManager.cxx Persistence.cxx 
+Log Message:
+1. Remove obsolete classes IFileManager, Persistence
+2. Use typedef names for Xerces classes (e.g. DomElement instead of
+   DOM_Element) as first step in migration plan
+3. In IFile.cxx fix up FATAL_MACRO, replace old-style c-includes with 
+   c++ equivalent
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Dec 15 15:30:44 PST 2003
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Change use of XMLEXT to only accept native version starting with "1"
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Oct  6 03:44:55 PDT 2003
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Mon Oct  6 03:42:39 PDT 2003
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r3p2
+    *
+------------------------------------------------------------
+User: jrb  Wed Sep 10 16:18:22 PDT 2003
+xml/src
+
+Modified Files:
+	EResolver.cxx 
+Log Message:
+Mysterious but harmless change (include xerces file early, even though
+included indirectly later) to make gcc 3.2 happy
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Aug 13 14:01:06 PDT 2003
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: hansl  Mon Aug 11 18:48:26 PDT 2003
+xml/mgr
+
+Removed Files:
+	requirements 
+Log Message:
+remove mgr/requirements to Attic
+    *
+------------------------------------------------------------
+User: hansl  Mon Aug 11 17:47:04 PDT 2003
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+version updated for next tag
+    *
+------------------------------------------------------------
+User: burnett  Mon Aug 11 14:37:06 PDT 2003
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+use new shared_library pattern
+    *
+------------------------------------------------------------
+User: hansl  Thu Aug  7 07:55:32 PDT 2003
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: hansl  Wed Aug  6 18:45:22 PDT 2003
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+adapt for GlastPolicy requirements v5r2p4
+    *
+------------------------------------------------------------
+User: hansl  Tue Aug  5 16:49:50 PDT 2003
+xml/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+corrected for GlastPolicy v5r2p1 (p2)
+    *
+------------------------------------------------------------
+User: burnett  Sun Jul 20 07:04:59 PDT 2003
+xml/mgr
+
+Removed Files:
+	.cvsignore 
+Log Message:
+create cmt folder; minor fix in Persistence
+    *
+------------------------------------------------------------
+User: burnett  Sun Jul 20 07:04:59 PDT 2003
+xml/cmt
+
+Added Files:
+	.cvsignore requirements 
+Log Message:
+create cmt folder; minor fix in Persistence
+    *
+------------------------------------------------------------
+User: burnett  Sun Jul 20 07:04:59 PDT 2003
+xml/xml
+
+Modified Files:
+	Persistence.h 
+Log Message:
+create cmt folder; minor fix in Persistence
+    *
+------------------------------------------------------------
+User: burnett  Sun Jul 20 07:04:59 PDT 2003
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+create cmt folder; minor fix in Persistence
+    *
+------------------------------------------------------------
+User: burnett  Sun Jul 20 06:56:32 PDT 2003
+xml/cmt
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/xml/cmt added to the repository
+--> Using per-directory sticky tag `v4r2p3'
+
+    *
+------------------------------------------------------------
+User: jrb  Sat Jun 28 16:59:49 PDT 2003
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Sat Jun 28 16:59:06 PDT 2003
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r2p5
+    *
+------------------------------------------------------------
+User: jrb  Sat Jun 28 16:46:46 PDT 2003
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Use ld_library_path pattern 
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Jun 27 16:57:17 PDT 2003
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Fri Jun 27 16:56:27 PDT 2003
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r2p4
+    *
+------------------------------------------------------------
+User: jrb  Fri Jun 27 16:56:05 PDT 2003
+xml/src
+
+Modified Files:
+	XmlErrorHandler.cxx 
+Log Message:
+(maybe) put out sensible error messages for all parsing errors
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Apr 17 14:26:07 PDT 2003
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Thu Apr 17 14:25:31 PDT 2003
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r2p3
+    *
+------------------------------------------------------------
+User: jrb  Tue Apr 15 13:35:14 PDT 2003
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+add author line 
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Mar 14 17:09:36 PST 2003
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Fri Mar 14 17:08:40 PST 2003
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r2p2
+    *
+------------------------------------------------------------
+User: jrb  Fri Mar 14 16:29:44 PST 2003
+xml/xml/docMan
+
+Modified Files:
+	DocClient.h DocMan.h 
+Log Message:
+Change #include of Xerces files to follow new convention: start path
+with xercesc/
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Mar 14 16:29:31 PST 2003
+xml/xml
+
+Modified Files:
+	Dom.h EResolver.h Persistence.h XmlErrorHandler.h XmlParser.h 
+Log Message:
+Change #include of Xerces files to follow new convention: start path
+with xercesc/
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Mar 14 16:29:15 PST 2003
+xml/src/test
+
+Modified Files:
+	test_mem.cxx 
+Log Message:
+Change #include of Xerces files to follow new convention: start path
+with xercesc/
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Mar 14 16:29:05 PST 2003
+xml/src/docMan
+
+Modified Files:
+	DocMan.cxx 
+Log Message:
+Change #include of Xerces files to follow new convention: start path
+with xercesc/
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Mar 14 16:28:53 PST 2003
+xml/src
+
+Modified Files:
+	Dom.cxx EResolver.cxx IFile.cxx Persistence.cxx 
+	XmlErrorHandler.cxx XmlParser.cxx main.cxx 
+Log Message:
+Change #include of Xerces files to follow new convention: start path
+with xercesc/
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Mar 14 16:27:58 PST 2003
+xml
+
+Modified Files:
+	.cvsignore 
+Log Message:
+Exclude new-style Linux binary directories
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 11 17:05:57 PST 2003
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 11 17:05:06 PST 2003
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r2p1
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 11 16:51:37 PST 2003
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Use new XMLEXT. The tag doesn't actually exist yet; don't tag this (xml)
+package until XMLEXT has its new tag.
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 21 11:19:47 PST 2003
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 21 11:17:16 PST 2003
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r2p0
+    *
+------------------------------------------------------------
+User: jrb  Thu Jan 16 09:21:04 PST 2003
+xml/src
+
+Modified Files:
+	EResolver.cxx 
+Log Message:
+Bug fix: clear entity vector upon clean-up.
+
+    *
+------------------------------------------------------------
+User: als  Thu Jan  9 17:16:36 PST 2003
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+sandbox merge
+
+version v4r2
+use statement updates
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Oct 29 09:36:48 PST 2002
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Tue Oct 29 09:35:43 PST 2002
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r1p5
+    *
+------------------------------------------------------------
+User: jrb  Mon Oct 28 09:57:42 PST 2002
+xml/src/test
+
+Modified Files:
+	test_mem.cxx 
+Log Message:
+Minor change to enable gcc 3 compile
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Jun  4 15:27:45 PDT 2002
+xml/xml
+
+Modified Files:
+	Dom.h 
+Log Message:
+ Change print and prettyPrint methods to take DOM_Node by value
+ rather than reference -- DOM_Node is just a form of smart pointer
+
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Jun  4 15:27:21 PDT 2002
+xml/src
+
+Modified Files:
+	Dom.cxx XmlErrorHandler.cxx 
+Log Message:
+Dom.cxx  Change print and prettyPrint methods to take DOM_Node by value
+         rather than reference -- DOM_Node is just a form of smart pointer
+XmlErrorHandler.cxx  Get rid of "unused parameter" warning
+
+    *
+------------------------------------------------------------
+User: jrb  Thu May 30 15:05:27 PDT 2002
+xml/xml/docMan
+
+Modified Files:
+	DocClient.h DocMan.h 
+Log Message:
+Use < > for Xerces includes
+
+    *
+------------------------------------------------------------
+User: jrb  Thu May 23 14:35:50 PDT 2002
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Thu May 23 14:34:42 PDT 2002
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r1p4
+    *
+------------------------------------------------------------
+User: jrb  Thu May 23 14:20:42 PDT 2002
+xml/src
+
+Modified Files:
+	XmlErrorHandler.cxx 
+Log Message:
+Check for non-existent system id before calling transToChar to convert it
+
+    *
+------------------------------------------------------------
+User: jrb  Thu May 23 14:19:59 PDT 2002
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Comment out "private" since it doesn't work
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Apr 25 14:12:10 PDT 2002
+xml/xml
+
+Removed Files:
+	mainpage.h 
+Log Message:
+Move mainpage.h to recommended subdirectory
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Apr 25 14:11:54 PDT 2002
+xml/src
+
+Added Files:
+	mainpage.h 
+Log Message:
+Move mainpage.h to recommended subdirectory
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Apr 25 14:11:23 PDT 2002
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Add wildcard versions in "use" statements
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Apr  4 21:13:27 PST 2002
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+updated for new release
+    *
+------------------------------------------------------------
+User: jrb  Thu Apr  4 21:12:25 PST 2002
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v4r1p3
+    *
+------------------------------------------------------------
+User: jrb  Thu Apr  4 21:04:30 PST 2002
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Clean up unnecessary commented-out line
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Mar 22 16:00:20 PST 2002
+xml/src
+
+Modified Files:
+	XmlParser.cxx 
+Log Message:
+Include filename in error message if file fails to parse
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Mar 22 15:34:29 PST 2002
+xml/src
+
+Modified Files:
+	EResolver.cxx XmlParser.cxx 
+Log Message:
+EResolver.cxx:  Clean up; get rid of commented-out blocks.
+XmlParser.cxx:  Fix misspelling in literals
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Mar 20 09:25:53 PST 2002
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+xml now requires facilities package.  Also update version for upcoming rtag
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 19 14:54:49 PST 2002
+xml/xml
+
+Modified Files:
+	Dom.h XmlErrorHandler.h XmlParser.h 
+Added Files:
+	EResolver.h 
+Log Message:
+1. Reference Xerces includes with < > rather than "  "
+2. Add entity resolver and modify XmlParser to use it
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 19 14:54:03 PST 2002
+xml/src/docMan
+
+Modified Files:
+	DocMan.cxx 
+Log Message:
+Reference Xerces includes with < > rather than "  "
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 19 14:53:26 PST 2002
+xml/src
+
+Modified Files:
+	XmlErrorHandler.cxx XmlParser.cxx 
+Added Files:
+	EResolver.cxx 
+Log Message:
+1. Add entity resolver EResolver so that environment variables may be used in
+   names of included files.
+2. Modify XmlParser to register the entity resolver
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 19 14:52:13 PST 2002
+xml/mgr
+
+Modified Files:
+	.cvsignore 
+Log Message:
+Ignore more stuff
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 19 14:51:58 PST 2002
+xml
+
+Modified Files:
+	.cvsignore 
+Log Message:
+Ignore more stuff
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 19 08:08:47 PST 2002
+xml/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Add entry for v4r1p2
+
+    *
+------------------------------------------------------------
+User: jrb  Sat Mar 16 22:30:49 PST 2002
+xml/src
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+Insure that transcoder and its buffers are always initialized
+
+    *
+------------------------------------------------------------
+User: burnett  Fri Mar 15 14:48:24 PST 2002
+xml/src
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+
+fix bug and tag v4r1p1
+    *
+------------------------------------------------------------
+User: burnett  Fri Mar 15 14:48:24 PST 2002
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+
+fix bug and tag v4r1p1
+    *
+------------------------------------------------------------
+User: burnett  Fri Mar 15 14:48:24 PST 2002
+xml/doc
+
+Added Files:
+	release.notes 
+Log Message:
+
+fix bug and tag v4r1p1
+    *
+------------------------------------------------------------
+User: jrb  Wed Feb 20 14:14:27 PST 2002
+xml/src
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+Fix long-standing, very intermittent bug in Dom::transTochar(DOMString)
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Feb 19 13:31:54 PST 2002
+xml/xml
+
+Modified Files:
+	IFileManager.h Persistence.h 
+Log Message:
+Changes to build dll/shareable (but not Gaudi component) rather than 
+static library
+1.  mods to link in requirements file
+2.  move inlines referencing static variables to implementation files
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Feb 19 13:31:54 PST 2002
+xml/src
+
+Modified Files:
+	IFileManager.cxx Persistence.cxx 
+Log Message:
+Changes to build dll/shareable (but not Gaudi component) rather than 
+static library
+1.  mods to link in requirements file
+2.  move inlines referencing static variables to implementation files
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Feb 19 13:31:54 PST 2002
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Changes to build dll/shareable (but not Gaudi component) rather than 
+static library
+1.  mods to link in requirements file
+2.  move inlines referencing static variables to implementation files
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan  7 10:52:05 PST 2002
+xml/xml
+
+Modified Files:
+	Dom.h 
+Log Message:
+Check for null argument to transcoding methods; complain if found
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan  7 10:52:05 PST 2002
+xml/src
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+Check for null argument to transcoding methods; complain if found
+
+    *
+------------------------------------------------------------
+User: burnett  Tue Jan  1 20:21:37 PST 2002
+xml/xml
+
+Modified Files:
+	Persistence.h 
+Log Message:
+replace FATAL and WARNING with throw, write to cerr.
+
+    *
+------------------------------------------------------------
+User: burnett  Tue Jan  1 20:21:37 PST 2002
+xml/src
+
+Modified Files:
+	IFile.cxx IFileManager.cxx 
+Log Message:
+replace FATAL and WARNING with throw, write to cerr.
+
+    *
+------------------------------------------------------------
+User: burnett  Tue Jan  1 20:21:36 PST 2002
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+replace FATAL and WARNING with throw, write to cerr.
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Nov  9 12:58:46 PST 2001
+xml/xml/docMan
+
+Added Files:
+	DocClient.h DocMan.h 
+Log Message:
+Moved generic part of XML Document manager to xml package, where it
+belongs.  That part specific to geometry description (class GDDDocMan)
+is in xmlUtil
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Nov  9 12:58:46 PST 2001
+xml/src/docMan
+
+Added Files:
+	DocMan.cxx 
+Log Message:
+Moved generic part of XML Document manager to xml package, where it
+belongs.  That part specific to geometry description (class GDDDocMan)
+is in xmlUtil
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Nov  9 12:58:46 PST 2001
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+Moved generic part of XML Document manager to xml package, where it
+belongs.  That part specific to geometry description (class GDDDocMan)
+is in xmlUtil
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Nov  9 12:54:26 PST 2001
+xml/xml/docMan
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/xml/xml/docMan added to the repository
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Nov  9 12:53:48 PST 2001
+xml/src/docMan
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/xml/src/docMan added to the repository
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Nov  7 14:29:25 PST 2001
+xml/xml
+
+Modified Files:
+	XmlParser.h 
+Log Message:
+1. Get rid of specific XMLEXT version in requirements file
+2. Add reset() method to XmlParser for use of xmlUtil/DocMan
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Nov  7 14:29:24 PST 2001
+xml/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+1. Get rid of specific XMLEXT version in requirements file
+2. Add reset() method to XmlParser for use of xmlUtil/DocMan
+
+    *
+------------------------------------------------------------
+User: burnett  Fri Nov  2 11:36:16 PST 2001
+xml/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+xerces version change
+    *
+------------------------------------------------------------
+User: jrb  Thu Nov  1 12:01:35 PST 2001
+xml/src Dom.cxx
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+Delete the correct old buffer
+
+    *
+------------------------------------------------------------
+User: burnett  Tue Sep 25 15:40:18 PDT 2001
+xml/src Dom.cxx
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+
+put in const needed for type cast.
+    *
+------------------------------------------------------------
+User: jrb  Mon Sep 24 16:18:52 PDT 2001
+xml/xml Dom.h
+
+Modified Files:
+	Dom.h 
+Log Message:
+1. More overloading of getAttribute (support DOM_Node argument)
+2. End EOL to requirements file
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Sep 24 16:18:52 PDT 2001
+xml/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+1. More overloading of getAttribute (support DOM_Node argument)
+2. End EOL to requirements file
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Sep 24 16:17:27 PDT 2001
+xml/src Dom.cxx
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+More overloading of getAttribute(..) (support DOM_Node argument) 
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Sep 17 16:52:50 PDT 2001
+xml/xml XmlParser.h
+
+Modified Files:
+	XmlParser.h 
+Log Message:
+Add
+ #include <string>
+for gcc compile
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Sep 17 16:52:08 PDT 2001
+xml/src XmlParser.cxx
+
+Modified Files:
+	XmlParser.cxx 
+Log Message:
+Use sizeof(XMLCh) since # of bytes may be platform-dependent
+
+    *
+------------------------------------------------------------
+User: burnett  Wed Sep  5 18:31:52 PDT 2001
+xml/src/test test_mem.cxx
+
+Added Files:
+	test_mem.cxx 
+Log Message:
+test program for new feature
+    *
+------------------------------------------------------------
+User: burnett  Wed Sep  5 18:31:51 PDT 2001
+xml/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+test program for new feature
+    *
+------------------------------------------------------------
+User: burnett  Wed Sep  5 18:30:41 PDT 2001
+xml/src/test - New directory
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/xml/src/test added to the repository
+
+    *
+------------------------------------------------------------
+User: burnett  Wed Sep  5 17:26:03 PDT 2001
+xml/xml XmlParser.h
+
+Modified Files:
+	XmlParser.h 
+Log Message:
+
+add possibility to parse a std::string. 
+    *
+------------------------------------------------------------
+User: burnett  Wed Sep  5 17:26:02 PDT 2001
+xml/src XmlParser.cxx
+
+Modified Files:
+	XmlParser.cxx 
+Log Message:
+
+add possibility to parse a std::string. 
+    *
+------------------------------------------------------------
+User: burnett  Wed Sep  5 17:26:02 PDT 2001
+xml/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+
+add possibility to parse a std::string. 
+    *
+------------------------------------------------------------
+TAG activity
+User: burnett  Mon Jul 16 17:14:46 2001
+Tag name: v3
+Tag operation: mov
+Repository: /nfs/slac/g/glast/ground/cvs/xml/mgr
+File(s) and revision(s): requirements
+    *
+------------------------------------------------------------
+User: igable  Sun Jul 15 15:16:23 PDT 2001
+xml/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+headers pattern
+    *
+------------------------------------------------------------
+User: igable  Sat Jul 14 16:21:04 PDT 2001
+xml/xml IFile.h
+
+Modified Files:
+	IFile.h 
+Log Message:
+make envVar function public
+    *
+------------------------------------------------------------
+TAG activity
+User: heather  Thu May 17 18:35:53 2001
+Tag name: v100r0
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/xml
+File(s) and revision(s): Document.h
+    *
+------------------------------------------------------------
+TAG activity
+User: heather  Thu May 17 18:35:48 2001
+Tag name: v100r0
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/src
+File(s) and revision(s): Document.cxx
+    *
+------------------------------------------------------------
+TAG activity
+User: heather  Thu May 17 18:35:43 2001
+Tag name: v100r0
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/mgr
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+TAG activity
+User: heather  Thu May 17 18:35:40 2001
+Tag name: v100r0
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/expat/xmlwf
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+TAG activity
+User: heather  Thu May 17 18:35:38 2001
+Tag name: v100r0
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/expat
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+TAG activity
+User: heather  Thu May 17 18:35:35 2001
+Tag name: v100r0
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+User: heather  Thu May 17 18:34:59 PDT 2001
+xml/mgr requirements
+
+Modified Files:
+      Tag: balloon
+	requirements 
+Log Message:
+updated for new cmt v1r7
+    *
+------------------------------------------------------------
+User: burnett  Wed Apr 18 14:10:23 PDT 2001
+xml/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+update for gaudi v7
+
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Fri Apr 13 11:09:51 2001
+Tag name: v2r4
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/xmldata
+File(s) and revision(s): test-arith.xml
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Fri Apr 13 11:09:49 2001
+Tag name: v2r4
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/xml
+File(s) and revision(s): Dom.h
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Fri Apr 13 11:09:48 2001
+Tag name: v2r4
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/src
+File(s) and revision(s): Dom.cxx
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Fri Apr 13 11:09:46 2001
+Tag name: v2r4
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/mgr
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Fri Apr 13 11:09:46 2001
+Tag name: v2r4
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/expat/xmlwf
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Fri Apr 13 11:09:45 2001
+Tag name: v2r4
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/expat
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Fri Apr 13 11:09:43 2001
+Tag name: v2r4
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+User: jrb  Thu Mar 29 15:36:51 PST 2001
+xml/xmldata constsDoc.xsl flight.xml gdd.dtd primextract.xsl
+
+Removed Files:
+	constsDoc.xsl flight.xml gdd.dtd primextract.xsl 
+Log Message:
+1. Added prune utility to Dom class
+2. Moved everything specific to gdd.dtd to new package xmlUtil
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Mar 29 15:36:48 PST 2001
+xml/xml Dom.h Arith.h Substitute.h
+
+Modified Files:
+	Dom.h 
+Removed Files:
+	Arith.h Substitute.h 
+Log Message:
+1. Added prune utility to Dom class
+2. Moved everything specific to gdd.dtd to new package xmlUtil
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Mar 29 15:36:47 PST 2001
+xml/src Dom.cxx main.cxx Arith.cxx Substitute.cxx eval.cxx makeXmlForDoc.cxx makeXmlForProg.cxx
+
+Modified Files:
+	Dom.cxx main.cxx 
+Removed Files:
+	Arith.cxx Substitute.cxx eval.cxx makeXmlForDoc.cxx 
+	makeXmlForProg.cxx 
+Log Message:
+1. Added prune utility to Dom class
+2. Moved everything specific to gdd.dtd to new package xmlUtil
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Mar 29 15:36:45 PST 2001
+xml/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+1. Added prune utility to Dom class
+2. Moved everything specific to gdd.dtd to new package xmlUtil
+
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Mon Mar 26 17:24:09 2001
+Tag name: v2r3
+Tag operation: mov
+Repository: /nfs/slac/g/glast/ground/cvs/xml/src
+File(s) and revision(s): makeXmlForProg.cxx
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Mon Mar 26 17:24:01 2001
+Tag name: v2r3
+Tag operation: mov
+Repository: /nfs/slac/g/glast/ground/cvs/xml/src
+File(s) and revision(s): makeXmlForDoc.cxx
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Mon Mar 26 17:22:41 2001
+Tag name: v2r3
+Tag operation: mov
+Repository: /nfs/slac/g/glast/ground/cvs/xml/src
+File(s) and revision(s): eval.cxx
+    *
+------------------------------------------------------------
+User: jrb  Mon Mar 26 16:18:16 PST 2001
+xml/src eval.cxx makeXmlForDoc.cxx makeXmlForProg.cxx
+
+Modified Files:
+	eval.cxx makeXmlForDoc.cxx makeXmlForProg.cxx 
+Log Message:
+Adjustments to get stand-alone programs to compile on Windows
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Fri Mar 23 12:11:04 2001
+Tag name: v2r3
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/xmldata
+File(s) and revision(s): constsDoc.xsl
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Fri Mar 23 12:11:04 2001
+Tag name: v2r3
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/xml
+File(s) and revision(s): Arith.h
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Fri Mar 23 12:11:04 2001
+Tag name: v2r3
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/src
+File(s) and revision(s): Arith.cxx
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Fri Mar 23 12:11:03 2001
+Tag name: v2r3
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/mgr
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Fri Mar 23 12:11:03 2001
+Tag name: v2r3
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/expat/xmlwf
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Fri Mar 23 12:11:03 2001
+Tag name: v2r3
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/expat
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Fri Mar 23 12:11:03 2001
+Tag name: v2r3
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+User: jrb  Fri Mar 23 11:59:30 PST 2001
+xml/xmldata gdd.dtd
+
+Modified Files:
+	gdd.dtd 
+Log Message:
+1. Make name attribute for <idField> any string (no more enumerated set)
+2. In makeXmlForProg evaluate all constants, even if unused.
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Mar 23 11:59:30 PST 2001
+xml/src makeXmlForProg.cxx
+
+Modified Files:
+	makeXmlForProg.cxx 
+Log Message:
+1. Make name attribute for <idField> any string (no more enumerated set)
+2. In makeXmlForProg evaluate all constants, even if unused.
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 20 15:51:22 PST 2001
+xml/xmldata flight.xml
+
+Modified Files:
+	flight.xml 
+Log Message:
+Put in some updated TKR parameters, volumes
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 20 08:32:27 PST 2001
+xml/xmldata gdd.dtd
+
+Modified Files:
+	gdd.dtd 
+Log Message:
+Fix "axis" attribute of <seg> element
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Mar 15 14:37:47 PST 2001
+xml/xmldata flight.xml
+
+Modified Files:
+	flight.xml 
+Log Message:
+All idField values must be integers
+    *
+------------------------------------------------------------
+User: jrb  Thu Mar 15 11:56:04 PST 2001
+xml/xmldata flight.xml
+
+Modified Files:
+	flight.xml 
+Log Message:
+1. Fixed various offsets, etc. needed to position pieces of ACD
+2. Added handling of CDATA sections to DOM::printElement and
+   DOM::prettyPrintElement
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Mar 15 11:56:03 PST 2001
+xml/src Dom.cxx
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+1. Fixed various offsets, etc. needed to position pieces of ACD
+2. Added handling of CDATA sections to DOM::printElement and
+   DOM::prettyPrintElement
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Mar 14 17:34:23 PST 2001
+xml/xmldata flight.xml gdd.dtd
+
+Modified Files:
+	flight.xml gdd.dtd 
+Log Message:
+Make a full LAT (lots of sky hooks)
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 13 15:58:07 PST 2001
+xml/xmldata constsDoc.xsl flight.xml gdd.dtd primextract.xsl test-arith.xml test-dtd.xml test-error.xml test.xml
+
+Added Files:
+	constsDoc.xsl flight.xml gdd.dtd primextract.xsl 
+	test-arith.xml test-dtd.xml test-error.xml test.xml 
+Log Message:
+1. Housecleaning.  .xml and related files are now in subdirectory xmldata
+2. Standalones forDoc.exe and forProg.exe write correct history information
+   to derived files
+3. New xslt transform constsDoc.xsl documents both primary and 
+   derived constants in output html.
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 13 15:58:06 PST 2001
+xml/xml flight.xml gdd.dtd primextract.xsl test-arith.xml test-dtd.xml test-error.xml test.xml
+
+Removed Files:
+	flight.xml gdd.dtd primextract.xsl test-arith.xml test-dtd.xml 
+	test-error.xml test.xml 
+Log Message:
+1. Housecleaning.  .xml and related files are now in subdirectory xmldata
+2. Standalones forDoc.exe and forProg.exe write correct history information
+   to derived files
+3. New xslt transform constsDoc.xsl documents both primary and 
+   derived constants in output html.
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 13 15:58:06 PST 2001
+xml/src makeXmlForDoc.cxx makeXmlForProg.cxx
+
+Modified Files:
+	makeXmlForDoc.cxx makeXmlForProg.cxx 
+Log Message:
+1. Housecleaning.  .xml and related files are now in subdirectory xmldata
+2. Standalones forDoc.exe and forProg.exe write correct history information
+   to derived files
+3. New xslt transform constsDoc.xsl documents both primary and 
+   derived constants in output html.
+
+    *
+------------------------------------------------------------
+User: tlindner  Tue Mar 13 14:02:36 PST 2001
+xml/src IFile.cxx
+
+Modified Files:
+	IFile.cxx 
+Log Message:
+Minor fix to get things working on linux.  Also added check for
+bad environment varirable.
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 13 13:24:32 PST 2001
+xml/xmldata - New directory
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/xml/xmldata added to the repository
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 13 11:19:54 PST 2001
+xml/src makeXmlForDoc.cxx makeXmlForProg.cxx
+
+Added Files:
+	makeXmlForDoc.cxx makeXmlForProg.cxx 
+Log Message:
+Pick up the new stand-alone programs
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 13 10:09:31 PST 2001
+xml/xml flight.xml gdd.dtd primextract.xsl Arith.h test-arith.xml
+
+Modified Files:
+	Arith.h test-arith.xml 
+Added Files:
+	flight.xml gdd.dtd primextract.xsl 
+Log Message:
+1. Moving gdd.dtd and associated file from detModel to xml
+2. Two new standalone programs to process original xml file into
+   forms suitable for program (simulation, recon, etc.) clients
+   and for documentation, resp.
+3. Changes to Arith, Substitute to support new <notes> element.
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 13 10:09:31 PST 2001
+xml/src Arith.cxx Substitute.cxx eval.cxx
+
+Modified Files:
+	Arith.cxx Substitute.cxx eval.cxx 
+Log Message:
+1. Moving gdd.dtd and associated file from detModel to xml
+2. Two new standalone programs to process original xml file into
+   forms suitable for program (simulation, recon, etc.) clients
+   and for documentation, resp.
+3. Changes to Arith, Substitute to support new <notes> element.
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar 13 10:09:31 PST 2001
+xml/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+1. Moving gdd.dtd and associated file from detModel to xml
+2. Two new standalone programs to process original xml file into
+   forms suitable for program (simulation, recon, etc.) clients
+   and for documentation, resp.
+3. Changes to Arith, Substitute to support new <notes> element.
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Mar  6 08:39:03 PST 2001
+xml/src XmlParser.cxx
+
+Modified Files:
+	XmlParser.cxx 
+Log Message:
+fix exception handling for non-existent input
+    *
+------------------------------------------------------------
+User: jrb  Mon Mar  5 09:20:47 PST 2001
+xml/src Substitute.cxx
+
+Modified Files:
+	Substitute.cxx 
+Log Message:
+Don't forget the std:: in std::vector
+    *
+------------------------------------------------------------
+User: heather  Mon Mar  5 07:16:45 PST 2001
+xml/src IFile.cxx
+
+Modified Files:
+	IFile.cxx 
+Log Message:
+new protected static method to find and replace references to
+environment variables within a string.
+    *
+------------------------------------------------------------
+User: heather  Mon Mar  5 07:16:21 PST 2001
+xml/xml IFile.h
+
+Modified Files:
+	IFile.h 
+Log Message:
+new protected static method to find and replace references to
+environment variables within a string.
+    *
+------------------------------------------------------------
+User: jrb  Fri Feb 23 15:28:08 PST 2001
+xml/xml Arith.h Dom.h Substitute.h XmlParser.h
+
+Modified Files:
+	Arith.h Dom.h Substitute.h XmlParser.h 
+Log Message:
+1. Standalone eval application adds <source> element to output xml
+   file so genesis may be traced
+2. Miscellaneous clean-up and improved Doxygen comments
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Feb 23 15:28:08 PST 2001
+xml/src Substitute.cxx XmlParser.cxx eval.cxx
+
+Modified Files:
+	Substitute.cxx XmlParser.cxx eval.cxx 
+Log Message:
+1. Standalone eval application adds <source> element to output xml
+   file so genesis may be traced
+2. Miscellaneous clean-up and improved Doxygen comments
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Feb 21 17:47:19 PST 2001
+xml/xml Substitute.h
+
+Added Files:
+	Substitute.h 
+Log Message:
+Really commit Substitute class this time (forgot to add it before)
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Feb 21 17:47:18 PST 2001
+xml/src Substitute.cxx
+
+Added Files:
+	Substitute.cxx 
+Log Message:
+Really commit Substitute class this time (forgot to add it before)
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Feb 21 17:44:26 PST 2001
+xml/src eval.cxx
+
+Modified Files:
+	eval.cxx 
+Log Message:
+1. New class Substitute will do substitution of constants, evaluating
+   them first if necessary
+2. Mods to test program to exercise Substitute 
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Feb 21 17:44:25 PST 2001
+xml/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+1. New class Substitute will do substitution of constants, evaluating
+   them first if necessary
+2. Mods to test program to exercise Substitute 
+
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Thu Feb 15 09:38:37 2001
+Tag name: v2r2
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/xml
+File(s) and revision(s): Arith.h
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Thu Feb 15 09:38:36 2001
+Tag name: v2r2
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/src
+File(s) and revision(s): Arith.cxx
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Thu Feb 15 09:38:35 2001
+Tag name: v2r2
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/mgr
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Thu Feb 15 09:38:34 2001
+Tag name: v2r2
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/expat/xmlwf
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Thu Feb 15 09:38:33 2001
+Tag name: v2r2
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml/expat
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+TAG activity
+User: jrb  Thu Feb 15 09:38:32 2001
+Tag name: v2r2
+Tag operation: add
+Repository: /nfs/slac/g/glast/ground/cvs/xml
+File(s) and revision(s): .cvsignore
+    *
+------------------------------------------------------------
+User: jrb  Wed Feb 14 09:22:36 PST 2001
+xml/src Dom.cxx
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+Fix dumb cut-and-paste error
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Feb 12 16:06:16 PST 2001
+xml/xml Arith.h Dom.h XmlErrorHandler.h XmlParser.h
+
+Modified Files:
+	Arith.h Dom.h XmlErrorHandler.h XmlParser.h 
+Log Message:
+add CVS header macros
+    *
+------------------------------------------------------------
+User: jrb  Mon Feb 12 16:06:16 PST 2001
+xml/src Arith.cxx Dom.cxx XmlErrorHandler.cxx XmlParser.cxx eval.cxx
+
+Modified Files:
+	Arith.cxx Dom.cxx XmlErrorHandler.cxx XmlParser.cxx eval.cxx 
+Log Message:
+add CVS header macros
+    *
+------------------------------------------------------------
+User: jrb  Mon Feb 12 16:06:15 PST 2001
+xml/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+add CVS header macros
+    *
+------------------------------------------------------------
+User: jrb  Mon Feb 12 15:06:16 PST 2001
+xml/xml Dom.h
+
+Modified Files:
+	Dom.h 
+Log Message:
+1. New stand-alone application eval takes as input an XML file with
+   derived constants; outputs a new file in which arithmetic body
+   of constants is evaluated and replaced with "value" attribute.
+2. Minor changes to Dom class to support transcoding of long
+   strings
+3. Get rid of extraneous comment in XmlErrorHandler.cxx
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Feb 12 15:06:16 PST 2001
+xml/src eval.cxx Dom.cxx XmlErrorHandler.cxx
+
+Modified Files:
+	Dom.cxx XmlErrorHandler.cxx 
+Added Files:
+	eval.cxx 
+Log Message:
+1. New stand-alone application eval takes as input an XML file with
+   derived constants; outputs a new file in which arithmetic body
+   of constants is evaluated and replaced with "value" attribute.
+2. Minor changes to Dom class to support transcoding of long
+   strings
+3. Get rid of extraneous comment in XmlErrorHandler.cxx
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Feb 12 15:06:16 PST 2001
+xml/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+1. New stand-alone application eval takes as input an XML file with
+   derived constants; outputs a new file in which arithmetic body
+   of constants is evaluated and replaced with "value" attribute.
+2. Minor changes to Dom class to support transcoding of long
+   strings
+3. Get rid of extraneous comment in XmlErrorHandler.cxx
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Feb  9 12:29:06 PST 2001
+xml/src Dom.cxx Persistence.cxx main.cxx
+
+Modified Files:
+	Dom.cxx Persistence.cxx main.cxx 
+Log Message:
+1. Work-around in Dom transcoding utilities to avoid Xerces bug
+2. Enlarged test program
+3. fix compile warning in Persistence.h
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Feb  8 15:08:14 PST 2001
+xml/xml test-arith.xml
+
+Modified Files:
+	test-arith.xml 
+Log Message:
+1. Get rid of unnecessary static_cast as suggested by Dario
+2. Adjust test program and test .xml file for changes in gdd.dtd
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Feb  8 15:08:13 PST 2001
+xml/src Dom.cxx main.cxx
+
+Modified Files:
+	Dom.cxx main.cxx 
+Log Message:
+1. Get rid of unnecessary static_cast as suggested by Dario
+2. Adjust test program and test .xml file for changes in gdd.dtd
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Feb  2 16:31:12 PST 2001
+xml/xml Arith.h test-arith.xml
+
+Modified Files:
+	Arith.h test-arith.xml 
+Log Message:
+Arith support for length units; test input modifiedto test it
+    *
+------------------------------------------------------------
+User: jrb  Fri Feb  2 16:31:12 PST 2001
+xml/src Arith.cxx
+
+Modified Files:
+	Arith.cxx 
+Log Message:
+Arith support for length units; test input modifiedto test it
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 30 13:54:05 PST 2001
+xml/xml Dom.h
+
+Modified Files:
+	Dom.h 
+Log Message:
+Fix minor glitches in Dom class and Persistence.h
+    *
+------------------------------------------------------------
+User: jrb  Tue Jan 30 13:54:05 PST 2001
+xml/src Arith.cxx
+
+Modified Files:
+	Arith.cxx 
+Log Message:
+Fix minor glitches in Dom class and Persistence.h
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan 29 17:21:09 PST 2001
+xml/xml Arith.h test-arith.xml Dom.h
+
+Modified Files:
+	Dom.h 
+Added Files:
+	Arith.h test-arith.xml 
+Log Message:
+New class for derived constants; enhanced test program to test it
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan 29 17:21:09 PST 2001
+xml/src Arith.cxx Dom.cxx main.cxx
+
+Modified Files:
+	Dom.cxx main.cxx 
+Added Files:
+	Arith.cxx 
+Log Message:
+New class for derived constants; enhanced test program to test it
+    *
+------------------------------------------------------------
+User: jrb  Mon Jan 29 17:21:08 PST 2001
+xml/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+New class for derived constants; enhanced test program to test it
+    *
+------------------------------------------------------------
+User: jrb  Fri Jan 26 12:57:14 PST 2001
+xml/xml Persistence.h
+
+Modified Files:
+	Persistence.h 
+Log Message:
+Appropriate (I hope) use of static_cast with xerces classes
+    *
+------------------------------------------------------------
+User: jrb  Fri Jan 26 12:57:13 PST 2001
+xml/src Dom.cxx IFile.cxx
+
+Modified Files:
+	Dom.cxx IFile.cxx 
+Log Message:
+Appropriate (I hope) use of static_cast with xerces classes
+    *
+------------------------------------------------------------
+User: ozaki  Fri Jan 26 03:08:02 PST 2001
+xml/xml Persistence.h
+
+Modified Files:
+	Persistence.h 
+Log Message:
+workaround for 'derived_class = base_class;'
+    *
+------------------------------------------------------------
+User: ozaki  Fri Jan 26 03:08:02 PST 2001
+xml/src Dom.cxx
+
+Modified Files:
+	Dom.cxx 
+Log Message:
+workaround for 'derived_class = base_class;'
+    *
+------------------------------------------------------------
+User: tlindner  Thu Jan 25 15:51:04 PST 2001
+xml/xml Persistence.h
+
+Modified Files:
+	Persistence.h 
+Log Message:
+silly gcc fix
+    *
+------------------------------------------------------------
+User: heather  Thu Jan 25 11:28:12 PST 2001
+xml/src XmlParser.cxx
+
+Modified Files:
+	XmlParser.cxx 
+Log Message:
+temporary fix
+    *

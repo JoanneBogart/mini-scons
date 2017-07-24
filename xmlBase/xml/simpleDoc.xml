@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE simple SYSTEM "simple.dtd" 
+  [
+    <!ENTITY externalFile SYSTEM "simpleExternal.xml" >
+  ]
+ >
+
+<!-- Compare behavior of elements in this file to those coming from
+     a separate physical file, included via an entity reference -->
+<simple>
+  <inline>
+    <const name="localConst" value="local" />
+    <const name="localRefer">
+      <refer refTo="localConst" />
+    </const>
+  </inline>
+
+  &externalFile;
+</simple>

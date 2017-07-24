@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--  test.xml .. for use with xml package test program  -->
+<!--  $Id$ -->
+<!DOCTYPE TopElement [
+  <!ELEMENT TopElement (ChildElt*) >
+
+  <!ELEMENT ChildElt (ChildWithText | EmptyChild)* >
+  <!ATTLIST ChildElt  anAttribute CDATA #REQUIRED >
+
+  <!ELEMENT ChildWithText (#PCDATA) >
+  <!ATTLIST ChildWithText attr CDATA #IMPLIED>
+
+  <!ELEMENT EmptyChild EMPTY>  ]
+>
+
+<TopElement>
+  <ChildElt  anAttribute="I'm nested but empty" />
+  <ChildElt  anAttribute= "I'm nested with content">
+     <ChildWithText attr="text content" >
+         Text content here.
+     </ChildWithText>
+     <EmptyChild />
+  </ChildElt>
+
+  <!-- What happens to this comment? -->
+
+  <!-- What about a
+       comment spread across 
+       three lines?          -->
+</TopElement>

@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes" ?>
+<TopElement>
+  <ChildElt  anAttribute="I'm nested but empty" />
+  <ChildElt  anAttribute= "I'm nested with content">
+     <ChildWithText attr="text content" >
+         Text content here.
+     </ChildWithText>
+     <EmptyChild />
+  </ChildElt>
+
+  <!-- Test getAttribute methods with the following -->
+
+  <ChildWithAttributes goodInt="-43" badInt="3LittlePigs"
+                       goodDouble="2.3e5" badDouble="e2.5"
+                       goodInts="1 2 3" goodDoubles="-2.3 4.1 6"
+                       badDoubles="1.2 phooey 3.1"
+    />
+
+  <!-- What happens to this comment? -->
+
+  <!-- What about a
+       comment spread across 
+       three lines?          -->
+</TopElement>

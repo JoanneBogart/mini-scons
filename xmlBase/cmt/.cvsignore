@@ -1,0 +1,8 @@
+*.make*
+*.sh
+*.csh
+Makefile
+0
+setup.*
+NMake
+*.bat

@@ -1,0 +1,6 @@
+  <external>
+    <extConst name="externalConst" value="external" />
+    <extConst name="externalRefer">
+      <extRefer refTo="externalConst" />
+    </extConst>
+  </external>

@@ -1,0 +1,20 @@
+TopElement>
+  <ChildElt  anAttribute="I'm nested but empty" />
+  <ChildElt  anAttribute= "I'm nested with content">
+     <ChildWithText attr="text content" >
+         Text content here.
+     </ChildWithText>
+     <EmptyChild />
+  </ChildElt>
+  </ChildElt>     <!-- syntax error here -->
+  <!-- Test getAttribute methods with the following -->
+
+  <ChildWithAttributes goodInt="-43" badInt="3LittlePigs"
+                       goodDouble="2.3e5" badDouble="e2.5" />
+
+  <!-- What happens to this comment? -->
+
+  <!-- What about a
+       comment spread across 
+       three lines?          -->
+</TopElement>

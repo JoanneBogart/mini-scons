@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://JoanneBogart@github.com/JoanneBogart/xmlBase.git
+	branch = master
+	commit = 0c295fa7dfdd589a65e6b22633b01af4ccd0dda4
+	parent = a859f78ee0b4421f58243e5344fe691c0ce2f93f
+	cmdver = 0.3.1

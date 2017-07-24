@@ -1,0 +1,38 @@
+package xmlBase
+# $Header$
+
+
+version v5r7p1
+
+author Joanne Bogart <jrb@slac.stanford.edu>
+
+use GlastPolicy  v*
+use XMLEXT       v5r2*   IExternal
+use facilities   v2r*
+
+apply_pattern shared_library
+
+private
+#--------------------------------------------------------
+apply_pattern package_headers
+
+library xmlBase  \
+     Dom.cxx \
+     IFile.cxx \
+     XmlErrorHandler.cxx   XmlParser.cxx  \
+     EResolver.cxx      \
+     docMan/DocMan.cxx            \
+     ${xmlBase_headers} 
+
+
+application test_xmlBase main.cxx  
+
+application test_mem test/test_mem.cxx 
+
+application test_IFile test/test_IFile.cxx
+
+application test_write test/test_write.cxx
+
+## normally don't need these
+###application entity_test test/entity_test.cxx
+##application test_altSchema test/test_altSchema.cxx

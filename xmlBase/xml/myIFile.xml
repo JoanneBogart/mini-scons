@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!-- Little test ifile -->
+
+<!DOCTYPE ifile SYSTEM "$(XMLBASEXMLPATH)/ifile.dtd" >
+
+<ifile cvs_Header="$Header$"
+       cvs_Revision="$Revision$" >
+  <section name="section1"> Comment for first section
+      <!-- and add XML-style official comment as well -->
+    <item name="section1-val1" value="1.0"> A value (float) </item>
+    <item name="section1-val2" value="33550336"> Another value (int) </item>
+    <section name="subsection">According to the dtd sections can
+          have section children
+          <item name="subsectionItem" value="a string">
+                string-valued item within a subsection
+          </item>
+    </section>
+    <!-- stick another random comment here -->
+  </section>
+  <section name="section2"> Comment for section2
+    <item name="bad-int" value="1a4">Call this an int, but it isn't</item>
+    <item name="okItem"  value="4.5"> A well-formed float</item>
+  </section>
+</ifile>
+

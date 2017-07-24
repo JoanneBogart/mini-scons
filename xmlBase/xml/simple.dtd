@@ -1,0 +1,18 @@
+<!ELEMENT simple (inline*, external*) >
+<!ELEMENT inline (const*) >
+<!ELEMENT const (refer?) >
+<!ATTLIST const name ID #IMPLIED
+                value NMTOKEN #IMPLIED >
+
+<!ELEMENT refer EMPTY >
+<!ATTLIST refer refTo IDREF #REQUIRED >
+
+<!ELEMENT external (extConst*) >
+<!ELEMENT extConst (extRefer?) >
+<!ATTLIST extConst name ID #IMPLIED
+                value NMTOKEN #IMPLIED >
+
+<!ELEMENT extRefer EMPTY >
+<!ATTLIST extRefer refTo IDREF #REQUIRED >
+
+
