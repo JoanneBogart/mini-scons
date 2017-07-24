@@ -1,0 +1,105 @@
+/** @file release.notes
+  @brief Package facilities
+ 
+  @verbatim
+  Coordinator: Toby Burnett
+            **EOH**
+
+ facilities-02-23-03 28-Jul-2015 heather Creating new tag with not changes to test RM
+ facilities-02-23-02 24-Jul-2015    jrb Provide way to convert timestamp to string taking account of leap seconds since MET
+ facilities-02-23-01 13-Jun-2014    jrb Update authors
+ facilities-02-23-00 28-Apr-2014 heather Test tag
+ facilities-02-22-05 19-Sep-2013    jrb Handle setupEnvironment call automatically in some cases
+ facilities-02-22-04 17-May-2013 glastrm Fixed AssertDialogOverride() function to provide desired behavior and updated comment documentation
+ facilities-02-22-03 16-May-2013 glastrm Corrected line endings so that programs will properly compile using the AssertDialogOverride.h header.
+ facilities-02-22-02 15-May-2013 glastrm Added header to use when overriding assertion dialogs on Windows.
+ facilities-02-22-01 30-Oct-2012    jrb patch for rhel6 compiler
+ facilities-02-22-00 27-Oct-2012    jrb new strategy for setting package env variables (e.g. GLEAMJOBOPTIONSPATH) correctly in all circumstances
+ facilities-02-21-00 16-Aug-2012    jrb support for Windows no-installed-headers
+ facilities-02-20-10 09-Jul-2012    jrb omit wrapper lib from GR without breaking other containers
+ facilities-02-20-09 09-Jul-2012    jrb no swig wrapper lib for GlastRelease
+ facilities-02-20-08 02-Jul-2012  cohen fix empty delimiter case
+ facilities-02-20-07 28-Feb-2012    jrb on Windows install XGetopt.obj
+ facilities-02-20-06 13-Feb-2012    jrb bug fix to pass obfldpath string correctly on Windows
+ facilities-02-20-05 10-Dec-2011    hmk Identical to previous, just trying to
+     force a latest build of ST in SCons RM
+ facilities-02-20-04 02-Dec-2011    jrb fix typo causing Windows compile failure
+ facilities-02-20-03 09-Nov-2011    jrb Use stat( ) rather than fstream::open to check if dir exists
+ facilities-02-20-02 10-Jun-2011    jrb minor change to SConscript affecting GRBAnalysis-scons only
+ facilities-02-20-01 27-May-2011    jrb Support for imminent GRBAnalysis-scons container
+ facilities-02-20-00 14-Apr-2011    hmk add in environment vars setting for 
+          CATALOGPRODUCTSPATH and DIFFUSEMODELSPATH
+ facilities-02-19-13 18-Jan-2011    hmk  forcing new tag to test SCons Win builds
+ facilities-02-19-12 04-Jan-2011 jchiang in commonUtilities, throw exception if CALDB env var is not set properly
+ facilities-02-19-11 12-Oct-2010    jrb swap a couple lines to get compile for ST as well as GR
+ facilities-02-19-10 11-Oct-2010    jrb Bug fix, general straightening up of setupEnvironment routine
+ facilities-02-19-09 15-Sep-2010    jrb Don't require all containers to use extFiles
+ facilities-02-19-08 14-Sep-2010    jrb Export env variable for obf load path
+ facilities-02-19-07 03-Sep-2010    jrb set env variables properly in case package directory has suffix
+ facilities-02-19-06 25-Jun-2010    jrb let pathFound( ) always return true on Windows since existence test fails when it shouldn't
+ facilities-02-19-05 12-Jun-2010    jrb bug fix in commonUtilities::setupEnvironment
+ facilities-02-19-04 11-Jun-2010    jrb Make ParticleTable.txt accessible to SCons builds of GR
+ facilities-02-19-03 24-Feb-2010    jrb fix linking for mac
+ facilities-02-19-02 24-Feb-2010    jrb fix linking for mac
+ facilities-02-19-01 22-Feb-2010    jrb correct use of xxLib for libEnv
+ facilities-02-19-00 13-Jan-2010    jrb Add support for installed job options
+    Modify def of $CALDB for new tag of irfs/caldb
+ facilities-02-18-14 17-Dec-2009    jrb patches for gcc4, make HEADAS friendly 
+ facilities-02-18-13 04-Dec-2009    jrb Better solution for env variables with or without supersede directory
+ facilities-02-18-12 03-Dec-2009    jrb Mods to commonUtilities for SCons only to take account of supersede directory when there is one
+ facilities-02-18-11 10-Sep-2009    jrb Get rid of compiler warning
+ facilities-02-18-10 07-Aug-2009    jrb Fix SConscript for Windows
+   v2r18p8  8-Jul-2009 jrb Modify SConscript to use registerTargets
+  v2r18p3  14-Nov-2008 ng  Fixed bugs that prevented a HEADAS compile
+  v2r18p2  31-Oct-2008 ng  Added section to commonUtilities for FSSC distribution.
+  v2r18p1  23-Apr-2008 ng  Modified setupEnvironment to set <PACKAGE>DATAPATH
+  v2r18    02-Apr-2008 hmk add method to expand env variables in a vector of 
+           strings facilties::Util::expandEnvVarList
+  v2r17p2  25-Jan-2008 panetta Fix stringToUll and stringToUnsigned to allow hex input
+  v2r17    18-Jan-2008 hmk add stringToUll
+  v2r16p20 12-Nov-2007 jrb Patch for Windows compile. 
+  v2r16p19 8-Nov-2007 jrb  New gsleep function (argument in milliseconds)
+  v1r16p7 26-Sep-2007 ng   New function for appending paths together
+  v1r16p6 24-Sep-2007 ng   Added doxygen documentation
+  v1r16p5 24-Sep-2007 ng   Use _putenv() instead of putenv() in windows.
+  v1r16p4 21-Sep-2007 ng   Stupid typo fixed.
+  v2r16p3 21-Sep-2007 ng   Added fix so commonUtilities compiles on windows
+  v2r16p2 18-Sep-2007 ng   Adding bug fixes by Joanne
+  v2r16p1 18-Sep-2007 ng   Add missing test cxx file
+  v2r16   18-Sep-2007 ng   Insert first version of commonUtilities to allow
+                            setting of env vars at runtime
+  v2r15   24-Jul-2007 hmk   Put getopt in facilities namespace and intro
+                            pattern to link in obj on windows for externals
+  v2r14p1 24-Jul-2007 jrb   Really make a shareable (no -no_share)
+  v2r14   5-Jul-2007  jrb   Build shareable rather than static library
+  v2r13   29-Jun-2007 hmk   Add XGetopt to provide getopt routine on windows
+  v2r12p5  4-Dec-2006 jrb   Add more blank-trimming routines (for David Decotigny)
+  v2r12p4 11-Jan-2006 jrb   Small fix to Util::WrongType exception class
+  v2r12p3 24-Oct-2005 jrb   Add utility Util::utoa (unsigned to string)
+  v2r12p2 21-Oct-2005 jrb   Add utility Util::stringToUnsigned
+  v2r12p1 31-Jul-2005 jrb   Base exception classes on std::exception
+  v2r12   3-Jun-2005  jrb   Add utility Util::expandEnvVarOS
+  v2r11   8-Apr-2005  jrb   Add utility Util::keyValueTokenize; add optional
+                            timezone arguments to some constructors of Timestamp
+  v2r10   1-Nov-2004  jrb   Add utility Util::trimTrailing
+  v2r9p3  21-Oct-2004 jrb   Bug fix for Util::expandEnvVar
+  v2r9p2  11-Jun-2004 jrb   Move implementation of getJulian() to .cxx
+  v2r9p1  11-Jun-2004 jrb   Fix to eliminate gcc compiler warning
+  v2r9p0  13-Jan-2004 jrb   Teeny change to WrongType exception class
+  v2r9    12-Jan-2004  jrb  Add new utilities Util::stringToDouble and
+                            Util::stringToInt
+  v2r8    6-Jan-2004  jrb   Add new utilities Util::stringTokenize and
+                            Util::basename 
+  v2r7p2 28-May-2003  thb   Add include needed for Windows
+  v2r7p1 14-May-2003  jrb   Throw exception in Util::expandEnvVar if
+                            encounter something untranslatable 
+  v2r7p0 14-Feb-2003  hmk   Use static char* in Util::itoa
+  v2r7   03-Jan-2003  jrb   Simplify Timestamp class
+  v2r6   19-sep-2002  thb   move cmt directory; minor gcc compilation fixes.
+  v2r5   29-aug-2002  thb   JRB Timestamp class
+  v2r4   15-Apr-2002  thb   hmk fixes
+  v2r3   09-Apr-2002  hmk   add new itoa routine
+  v2r2p1 20-Mar-2002  jrb   Fix for Windows compile
+  v2r2   19-Mar-2002  jrb   Add Util class
+  @endverbatim
+ */

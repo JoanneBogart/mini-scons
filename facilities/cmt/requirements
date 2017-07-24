@@ -1,0 +1,41 @@
+package facilities
+version v2r23p3
+
+author T.Burnett <tburnett@u.washington.edu>
+author Joanne Bogart <jrb@slac.stanford.edu>
+use GlastPolicy
+use swig * IExternal
+
+apply_pattern shared_library
+
+pattern use_facilities_symbols \
+  macro_append facilities_linkopts " "\
+     WIN32 " ${facilities_root}/${BINDIR}/facilities/XGetopt.obj "
+
+path_remove PYTHONPATH facilities
+path_prepend PYTHONPATH $(FACILITIESROOT)/$(BINDIR)
+path_remove PYTHONPATH "" Linux "${facilities_cmtpath}/lib" \
+                          WIN32 "${FACILITIESROOT}\${CMTCONFIG}"
+path_append PYTHONPATH "" Linux "${facilities_cmtpath}/lib" \
+                          WIN32 "${FACILITIESROOT}\${CMTCONFIG}"
+path_append PYTHONPATH "" Linux "$(FACILITIESROOT)/python" \
+                          WIN32 "$(FACILITIESROOT)\python"
+
+private
+
+use SwigPolicy *
+
+apply_pattern package_headers
+
+
+library  facilities  *.cxx \
+			${facilities_headers}
+
+application test_Util test/testUtil.cxx Util.cxx
+
+# uncomment for development
+application test_time test/test_time.cxx Timestamp.cxx
+
+application test_env test/test_env.cxx
+
+apply_pattern swig_module name="py_facilities"
