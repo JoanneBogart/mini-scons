@@ -1,7 +1,7 @@
 #  Placeholder.  Needs work.  List of package names is correct or nearly so
 #  Several versions have to be changed
 
-#  ScienceTools_Util packageList.txt
+#  mini packageList.txt
 # $Id: packageList.txt,v 1.1.1.1 2017/05/06 00:49:47 jrb Exp $
 
 # in common with GlastRelease
