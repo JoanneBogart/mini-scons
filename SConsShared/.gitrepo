@@ -6,6 +6,6 @@
 [subrepo]
 	remote = https://JoanneBogart@github.com/JoanneBogart/SConsShared.git
 	branch = master
-	commit = 72a98dbe9bcbf9afe49a27e423a5d0f7ffbc9066
-	parent = 7487c5e3bfd19bcfcd501a6f356337d48829f69b
+	commit = d53962bb10fd797a4f8c2813600ddb176e605f1d
+	parent = 424901c0dcf68546d5a3967a4b748eedd5a6de6f
 	cmdver = 0.3.1

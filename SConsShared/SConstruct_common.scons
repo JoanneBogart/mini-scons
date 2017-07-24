@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/farm/g/glast/u52/cvs_test/cvs/ScienceTools_User-scons/SConsShared/SConstruct,v 1.2 2017/05/09 01:02:30 jrb Exp $
+# $Header: /nfs/farm/g/glast/u52/cvs_test/cvs/ScienceTools_User-scons/SConsShared/SConstruct_common.scons,v 1.2 2017/07/22 01:27:42 jrb Exp $
 # Authors: Navid Golpayegani <golpa@slac.stanford.edu>, Joanne Bogart <jrb@slac.stanford.edu>
 # Version: SConsShared-02-01-00
 
@@ -15,7 +15,7 @@ for arg in sys.argv:
     print "=> ",arg
 print "\n"
 
-EnsureSConsVersion(1, 3, 0)
+EnsureSConsVersion(2, 1, 0)
 
 #  Define compiler options *before* creating baseEnv
 AddOption('--32bit', dest='bits', action='store_const', const='32', help='Force 32bit compiles even on 64bit machines')
@@ -79,7 +79,7 @@ AddOption('--rm', dest='rm', action='store_true', help='Enable output helpful fo
 AddOption('--ccflags', dest='ccflags', action='store', nargs=1, type='string', metavar='FLAGS', help='Compiler flags to pass to the C compiler')
 AddOption('--cxxflags', dest='cxxflags', action='store', nargs=1, type='string', metavar='FLAGS', help='Compiler flags to pass to the C++ compiler')
 AddOption('--variant', dest='variant', action='store', nargs=1, type='string', help='The variant to use instead of the computed one')
-AddOption('--supersede', dest='supersede', action='store', nargs=1, type='string', default='.', metavar='DIR', help='Directory containing packages superseding installed ones. Relative paths not supported!')
+AddOption('--supersede', dest='supersede', action='store', nargs=1, type='string', default='#', metavar='DIR', help='Directory containing packages superseding installed ones. Relative paths not supported!')
 AddOption('--exclude', dest='exclude', action='append', nargs=1, type='string', metavar='DIR', help='Directory containing a SConscript file that should be ignored.')
 AddOption('--user-release', dest='userRelease', nargs=1, type='string', action='store', metavar='FILE', help='Creates a compressed user release and stores it in FILE')
 AddOption('--source-release', dest='sourceRelease', nargs=1, type='string', action='store', metavar='FILE', help='Creates a compressed source release and stores it in FILE')
@@ -135,7 +135,10 @@ if baseEnv.GetOption('variant'):
     variant = baseEnv.GetOption('variant')
     if variant == "NONE": baseEnv['NO_VARIANT'] = True
 override = baseEnv.GetOption('supersede')
-SConsignFile(os.path.join(os.path.join(override, platBrief) , '.sconsign.dblite'))
+if override == '#':
+    SConsignFile(os.path.join(platBrief , '.sconsign.dblite'))
+else:
+    SConsignFile(os.path.join(os.path.join(override, platBrief) , '.sconsign.dblite'))
 baseEnv['VARIANT'] = variant
 baseEnv['PLATBRIEF'] = platBrief
 Export('baseEnv')
@@ -179,7 +182,8 @@ baseEnv.Append(TESTDIR        = baseEnv['BINDIR'])
 baseEnv.Append(TESTSCRIPTDIR  = baseEnv['SCRIPTDIR'])
 baseEnv.Append(PYTHONDIR      = Dir(override).Dir('python'))
 baseEnv.Append(DOCDIR         = Dir(override).Dir('SConsShared').Dir('Doxygen'))
-baseEnv.Append(DEFAULTDOCFILE = Dir('.').Dir('SConsShared').Dir('Doxygen').File('Default'))
+##baseEnv.Append(DEFAULTDOCFILE = Dir('.').Dir('SConsShared').Dir('Doxygen').File('Default'))
+baseEnv.Append(DEFAULTDOCFILE = Dir('#').Dir('SConsShared').Dir('Doxygen').File('Default'))
 baseEnv.Append(DOXYGENOUTPUT  = baseEnv.GetOption('doxygenOutput'))
 baseEnv['CONFIGURELOG']       = str(Dir(override).File("config.log"))
 baseEnv['CONFIGUREDIR']       = str(Dir(override).Dir(".sconf_temp"))
@@ -241,29 +245,32 @@ if baseEnv.GetOption('develRelease'):
 #####################################
 #  Container Settings Directories   #
 #####################################
-baseSettingsDir = 'containerSettings'
-if os.path.exists('containerPrefix.scons'):
-
-    basePrefix = SConscript('containerPrefix.scons')
-    baseSettingsDir = basePrefix + baseSettingsDir
+Import('myVars')
+baseSettingsDir = '#/' + myVars['myPrefix'] + 'containerSettings'
+#if os.path.exists('containerPrefix.scons'):
+#
+#    basePrefix = SConscript('containerPrefix.scons')
+#    baseSettingsDir = basePrefix + baseSettingsDir
     
-supersedeSettingsDir = 'containerSettings'
-if override != '.':
-    if os.path.exists(os.path.join(override, 'containerPrefix.scons')):
-        supersedePrefix = SConscript(os.path.join(override,
-                                                  'containerPrefix.scons'))
-        supersedeSettingsDir = supersedePrefix + supersedeSettingsDir
+supersedeSettingsDir = '#/' + myVars['myPrefix'] + 'containerSettings'
+#if override != '.':
+#    if os.path.exists(os.path.join(override, 'containerPrefix.scons')):
+#        supersedePrefix = SConscript(os.path.join(override,
+#                                                  'containerPrefix.scons'))
+#        supersedeSettingsDir = supersedePrefix + supersedeSettingsDir
 
 
 
 #########################
 #  External Libraries   #
 #########################
-allExternals = SConscript(os.path.join('SConsShared','allExternals.scons'))
+##allExternals = SConscript(os.path.join('SConsShared','allExternals.scons'))
+allExternals = SConscript('allExternals.scons')
     
 usedExternals = SConscript(os.path.join(baseSettingsDir, 'externals.scons'),
                            exports = 'allExternals')
-SConscript(os.path.join('SConsShared', 'processExternals.scons'), exports = 'allExternals usedExternals')
+#SConscript(os.path.join('SConsShared', 'processExternals.scons'), exports = 'allExternals usedExternals')
+SConscript('processExternals.scons', exports = 'allExternals usedExternals')
 
 
 ############################
@@ -294,7 +301,9 @@ if not baseEnv.GetOption('help'):
     # set haveSuper = True if this installation as non-trivial supersede dir
     # In that case, if rootdir = '.', don't do add to tool path
     def findPackages(rootdir, haveSuper):
-        toolAdd = not haveSuper or (rootdir != '.')
+        #toolAdd = not haveSuper or (rootdir != '.')
+        toolAdd = not haveSuper or (rootdir != '#')
+        if rootdir == '#': rootdir = '../'
         dirs = [rootdir]
         pcks = []
         while len(dirs)>0:
@@ -337,20 +346,24 @@ if not baseEnv.GetOption('help'):
     (directories, packages) = findPackages(override, False)
 
 
-    if not override == '.':
+    #if not override == '.':
+    if not override == '#':
         SCons.Tool.DefaultToolpath.append(os.path.abspath(str(Dir('.').Dir('sconsTools'))))
 
     Export('packages')
     baseEnv['packageNameList'] = packages
 
+    ##print "Found packages are", packages
 
 # To create _setup anad wrappers
     pfilesSetup = baseEnv.Install(baseEnv['SCRIPTDIR'],
-                                  [os.path.join('SConsShared',
-                                                'shellscripts',
+    ###                                  [os.path.join('SConsShared',
+    ###                                            'shellscripts',
+                                  [os.path.join('shellscripts',
                                                 'pfiles_setup.sh'),
-                                   os.path.join('SConsShared',
-                                                'shellscripts',
+    ###                               os.path.join('SConsShared',
+    ###                                            'shellscripts',
+                                   os.path.join('shellscripts',
                                                 'pfiles_setup.csh')])
     
         
@@ -359,7 +372,8 @@ if not baseEnv.GetOption('help'):
     if  'usePfiles' in baseEnv:
         baseEnv.Depends(setupScript, pfilesSetup)
 
-    if override != '.':
+    #if override != '.':
+    if override != '#':
         baseEnv.AlwaysBuild(setupScript)
 
     baseEnv.Default(setupScript)
@@ -377,12 +391,12 @@ if not baseEnv.GetOption('help'):
             if 'NO_VARIANT' in baseEnv:
                 baseEnv.SConscript(os.path.join(pkg,"SConscript"),
                                    variant_dir = os.path.join(pkg, 'build'),
-                                   duplicate=dup)
+                                   duplicate=dup, exports='myVars')
             else:
                 baseEnv.SConscript(os.path.join(pkg,"SConscript"),
                                    variant_dir = os.path.join(pkg, 'build',
                                                               variant),
-                                   duplicate=dup)
+                                   duplicate=dup, exports='myVars')
 
 	except Exception, inst:
 	    print "scons: Skipped "+pkg.lstrip(override+os.sep)+" because of exceptions: "+str(inst)
