@@ -1,0 +1,193 @@
+/** @file release.notes
+ * Package xmlBase
+ * Coordinators: N. Golyapegani, J. Bogart
+ *
+ *                * EOH *
+
+ SConsShared-02-01-00 08-May-2017    jrb replacement for SConsFiles. Initial tag
+ SConsFiles-02-00-00 30-Mar-2017 heather Add in standalone Minuit2
+ SConsFiles-01-27-00 14-Sep-2016 heather adding cppunit 1.12.1 for RH7
+ SConsFiles-01-26-01 18-Jul-2016    jrb make nodebug the default for opt builds. Packages may override in containerSettings/package.scons
+ SConsFiles-01-26-00 05-Jul-2016 heather add python 2.7.10
+ SConsFiles-01-25-00 18-Apr-2016 heather adding diffuseModels v5r0
+ SConsFiles-01-24-00 30-Mar-2016 heather adding xerces 3.1.3
+ SConsFiles-01-23-00 01-Mar-2016 heather adding TMine 3.3.10 and Anaconda Python
+ SConsFiles-01-22-02 14-Jan-2016 heather ROOT v5.34.34 is now available on RH6 only
+ SConsFiles-01-22-01 04-Dec-2015 echarles Added healpix 3.30
+ SConsFiles-01-22-00 14-Oct-2015 heather adding gsl as a new external library
+ SConsFiles-01-21-04 29-Sep-2015 heather adding rebuilds of healpix and wcslib for cfitsio v3370
+ SConsFiles-01-21-03 09-Sep-2015 heather back off python 2.7.6 for rhel5-64
+ SConsFiles-01-21-02 09-Sep-2015 heather add python 2.7.6-gl2
+ SConsFiles-01-21-01 25-Aug-2015 heather adding python 2.7.6-gl1
+ SConsFiles-01-21-00 19-Jun-2015 heather Update Python 2.5.2 to remove compiler subdir for current CHS builds
+ SConsFiles-01-20-00 07-Apr-2015 heather renaming healpix from Healpix_3.20 to 3.20
+ SConsFiles-01-19-02 31-Mar-2015    jrb Add rhel6 python 2.5.2 external for CHS (on behalf of Steve Tether)
+ SConsFiles-01-19-01 27-Mar-2015 echarles Really added healpix and wcslib to allExternals.scons
+ SConsFiles-01-19-00 27-Mar-2015 echarles Added healpix and wcslib to allExternals.scons
+ SConsFiles-01-18-00 09-Feb-2015 heather add python 2.7.8
+ SConsFiles-01-17-00 09-Feb-2015 heather add cfitsio v3370 and ape 2.8
+ SConsFiles-01-16-02 13-Jan-2015 jchiang added catalogProducts v2r1 diffuseModels v4r1
+ SConsFiles-01-16-01 21-Nov-2014    jrb Add mysql 5.5.15 (exists only for rhel5-32.  Use as dependency for fsw B3-2-0
+ SConsFiles-01-16-00 28-Oct-2014 heather Added fsw B3-2-0
+ SConsFiles-01-15-01 18-Jul-2014 heather adding TMine 3.3.9
+ SConsFiles-01-15-01 18-Jul-2014 heather added TMine 3.3.9 and tagging
+   Eric's patch
+ SConsFiles-01-15-00 12-May-2014 heather adding python 2.7.6
+ SConsFiles-01-14-01 22-Apr-2014 echarles Have TMineExt also make python dir
+ SConsFiles-01-14-00 08-Apr-2014 heather adding extFiles v0r16
+ SConsFiles-01-13-00 07-Apr-2014 heather adding TMineExt 3.3.6
+ SConsFiles-01-12-02 05-Mar-2014 heather Fix Ruby path
+ SConsFiles-01-12-01 03-Mar-2014 heather adding ruby 1.8.7
+ SConsFiles-01-12-00 03-Mar-2014 heather Adding ruby
+ SConsFiles-01-11-06 03-Mar-2014 glastrm Changed MountainLion section of SConstruct to get proper x86_64 cpu type
+ SConsFiles-01-11-05 28-Feb-2014 glastrm Updated files for building Mountain Lion
+ SConsFiles-01-11-04 18-Dec-2013 heather adding extFiles v0r15
+ SConsFiles-01-11-03 09-Oct-2013    jrb add catalogProducts v1r3, diffuseModels v4r0 (for jchiang)
+ SConsFiles-01-11-02 25-Jul-2013    jrb store SCons dependency and externals bookkeeping in os/compiler-specific directory
+ SConsFiles-01-11-01 18-Jun-2013    jrb bug fix to properly create ALL the all*.sln files (affects Windows only)
+ SConsFiles-01-11-00 13-Jun-2013 heather add extFiles v0r14
+ SConsFiles-01-10-06 31-May-2013 glastrm Fixed TARFLAGS variable to properly pass arguments to tar
+ SConsFiles-01-10-05 12-Apr-2013    jrb Windows-only enhancement: create alluserAlg.sln as well as all.sln and allGleam.sln
+ SConsFiles-01-10-04 08-Apr-2013 heather new P8 XML in extFiles
+ SConsFiles-01-10-03 03-Apr-2013    jrb Bug fix for writeAllSln.py
+ SConsFiles-01-10-02 15-Mar-2013    jrb Add f2c entry to allExternals.scons for external with no compiler component in path
+ SConsFiles-01-10-01 21-Feb-2013    jrb Add new target forVS
+ SConsFiles-01-10-00 20-Feb-2013    jrb Patches, enhancements to for Windows builds, especially with VS and/or supersede area
+ SConsFiles-01-09-01 14-Feb-2013    jrb add xxLib.py files to to_include target
+ SConsFiles-01-09-00 10-Feb-2013 heather P8 worksheet update in extFiles v0r12 and obf B3-1-3
+ SConsFiles-01-08-10 19-Dec-2012    jrb fix f2c entries for Windows so that VS project files referencing f2c are generated correctly
+ SConsFiles-01-08-09 05-Dec-2012    jrb patch for Windows GR supersede: use abs path in CPPPATH for supersede packages
+ SConsFiles-01-08-08 29-Nov-2012 heather update externals for RHEL6
+ SConsFiles-01-08-07 26-Nov-2012 heather Update windows externals
+ SConsFiles-01-08-06 19-Nov-2012 heather making v5.34.03-gr01 ROOT for xrootd libs
+ SConsFiles-01-08-05 16-Nov-2012 heather add debug root on windows
+ SConsFiles-01-08-04 16-Nov-2012 heather add TMineExt 3.3.2-gr01
+ SConsFiles-01-08-03 14-Nov-2012 heather stick with python 2.7.2 on windows
+ SConsFiles-01-08-02 14-Nov-2012 heather adding in new python with additional requested modules
+ SConsFiles-01-08-01 13-Nov-2012 heather add in gaudi v21r7-gl4
+ SConsFiles-01-08-00 13-Nov-2012 heather Add in TMineExt 3.3.2
+ SConsFiles-01-07-00 13-Nov-2012 heather Add in ROOT v5.34.03
+ SConsFiles-01-06-01 29-Oct-2012    jrb add entries for obf B3-1-1, fsw B3-1-1
+ SConsFiles-01-06-00 26-Oct-2012    jrb generate file data/supersede.pkgList when there is a supersede area
+ SConsFiles-01-05-02 17-Oct-2012    jrb Add entry for fsw B3-1-0
+ SConsFiles-01-05-01 16-Oct-2012    jrb add entry for obf B3-1-0
+ SConsFiles-01-05-00 09-Oct-2012 heather setup debug TMine 3.2.8 and cfitsio v3290 for vc90
+ SConsFiles-01-04-00 01-Oct-2012 heather Add TMine 3.2.8
+ SConsFiles-01-03-00 01-Oct-2012 heather Adding extFiles v0r11 and ROOT v5.34.01
+ SConsFiles-01-02-01 19-Sep-2012    jrb comment out debug print statement
+ SConsFiles-01-02-00 18-Sep-2012    jrb Resuscitate supersede for vc90
+ SConsFiles-01-01-03 18-Sep-2012 heather Finish removal of compiler subdirectory in externals area for GR
+ SConsFiles-01-01-01 04-Sep-2012 heather adding G4 9.4.p03-gl3 for vc90 opt
+ SConsFiles-01-01-00 28-Aug-2012 heather Move python 2.7.2 to -gl1 for gcc44 to get Tk fix
+ SConsFiles-01-00-00 21-Aug-2012    jrb Do not install headers for Windows GlastRelease
+ SConsFiles-00-28-01 03-Aug-2012    jrb backwards-compatible mods needed for non-installed headers on Windows GR
+ SConsFiles-00-28-00 26-Jul-2012 heather Add G4 9.4.p03-gl2 and CLHEP 2.1.2.4 for vc90
+ SConsFiles-00-27-02 20-Jul-2012    jrb fix typo in allExternals affecting rhel4
+ SConsFiles-00-27-01 19-Jul-2012    jrb fix share-path for new swig version
+ SConsFiles-00-27-00 18-Jul-2012    jrb add versions with no compiler component in path
+ SConsFiles-00-26-00 18-Jul-2012 heather adding zlib 1.2.5 for vc90
+ SConsFiles-00-25-04 16-Jul-2012    jrb Add entry for ldf v07-01-02
+ SConsFiles-00-25-03 05-Jul-2012    jrb exclude bogus entries from LD_LIBRARY_PATH
+ SConsFiles-00-25-02 05-Jul-2012 glastrm Updated SConstruct to properly exclude directories not needed by TMineExt
+ SConsFiles-00-25-01 03-Jul-2012 heather Being brave and trying mod for x11 rhel4 handling
+ SConsFiles-00-25-00 02-Jul-2012    jrb rhel6 externals for GR
+ SConsFiles-00-24-00 21-Jun-2012    jrb on Linux use system installations of zlib and x11
+ SConsFiles-00-23-08 11-Jun-2012    jrb properly handle pseudo package *ALL* 
+ SConsFiles-00-23-07 04-Jun-2012    jrb try getting along without rootmaps
+ SConsFiles-00-23-06 31-May-2012    jrb clean up unneeded comments; cosmetic only
+ SConsFiles-00-23-05 30-May-2012    jrb Improve scheme for getting installs done by project files
+ SConsFiles-00-23-04 29-May-2012 glastrm Fixed bug preventing user release builds of GR.
+ SConsFiles-00-23-03 25-May-2012    jrb Fix up ldf external for vc90
+ SConsFiles-00-23-02 24-May-2012    jrb add CLHEP and geant versions needed by Windows vc90
+ SConsFiles-00-23-01 24-May-2012    jrb updates for vc90
+ SConsFiles-00-23-00 18-May-2012    jrb updates for better project and solution files
+ SConsFiles-00-22-00 02-May-2012    jrb teach SCons how to build VS solution file for all
+ SConsFiles-00-21-02 27-Apr-2012    jrb bug fix for Windows project file install enhancement
+ SConsFiles-00-21-01 26-Apr-2012    jrb add entry for obf B3-0-0-gl1
+ SConsFiles-00-21-00 18-Apr-2012    jrb Windows: fix debug/opt compile options; add install step to library vcproj files
+ SConsFiles-00-20-00 12-Apr-2012 heather add rhel5 gaudi debug into allExternals
+ SConsFiles-00-19-02 05-Apr-2012 heather Fix rootcint and put it back the way it was
+ SConsFiles-00-19-01 04-Apr-2012 heather temporarily removing -p option for rootcint
+ SConsFiles-00-19-00 03-Apr-2012 heather Adding ROOT v5.26.00a-gl6
+ SConsFiles-00-18-03 20-Mar-2012 glastrm Added the containerName option to allow the builds of the distribution packages to include the proper subdirectories
+ SConsFiles-00-18-02 19-Mar-2012 glastrm Tweaked SConstruct file to not include the syspfiles directory for GlastRelease builds
+ SConsFiles-00-18-01 13-Feb-2012    jrb bug fix in allExternals affecting obf on Windows
+ SConsFiles-00-18-00 09-Feb-2012 heather add definition of cfitsio v3290
+ SConsFiles-00-17-07 03-Feb-2012    jrb SConstruct fix for vc90; various externals updates
+ SConsFiles-00-17-06 23-Jan-2012    jrb allExternals: Add libMinuit to MinuitLibs for Windows
+ SConsFiles-00-17-05 19-Jan-2012    jrb add new install type to registerTargets; add vc90 FOX to allExternals
+ SConsFiles-00-17-04 17-Jan-2012    jrb put appropriate things in OmniOrbLibs
+ SConsFiles-00-17-03 14-Jan-2012    jrb use rdynamic for component libs
+ SConsFiles-00-17-02 13-Jan-2012    jrb add -rdynamic flag for gaudi components
+ SConsFiles-00-17-01 04-Jan-2012 heather patch version of geant4 for vc90 debug 9.4.p01-gl2
+ SConsFiles-00-17-00 04-Jan-2012    jrb change to using lowercase for ldf external name
+ SConsFiles-00-16-01 13-Dec-2011 heather mods of G4 external on rhel5
+ SConsFiles-00-16-00 08-Nov-2011 heather add python 2.7.2 for rhel6 and ROOT -gl5
+ SConsFiles-00-15-05 06-Oct-2011    jrb small mod to allExternals for Windows obf; put containerSettings init after externals init in SConstruct
+ SConsFiles-00-15-04 06-Oct-2011    jrb new obf externals and enhancements in processExternals to propagate information about them
+ SConsFiles-00-15-03 29-Sep-2011    jrb add entry for cataglogProducts v1r1; add new alias (Windows only) for project files
+ SConsFiles-00-15-02 22-Sep-2011    jrb Have RM print all externals so that all will get packaged up for Installer
+ SConsFiles-00-15-01 16-Sep-2011    hmk Remove g3tog4 for win g4 9.4.p01
+ SConsFiles-00-15-00 16-Aug-2011    jrb add data and code for exporting G4 table path
+ SConsFiles-00-14-03 15-Aug-2011    jrb Fix for new G4 on Linux
+ SConsFiles-00-14-02 02-Aug-2011    jrb Add entry to allExternals.scons for diffuseModels v2r0
+ SConsFiles-00-14-01 11-Jul-2011 glastrm Added linker flag to fixe windows vc90 builds
+ SConsFiles-00-14-00 29-Jun-2011 heather added python 2.7
+ SConsFiles-00-13-01 24-May-2011 heather use g4 9.4.p01-gl1 on vc71
+ SConsFiles-00-13-00 23-May-2011 heather add G4 9.4.p01 and CLHEP 2.1.0.1 to allExternals
+ SConsFiles-00-12-02 22-Apr-2011    jrb Always build setup target if --supersede
+ SConsFiles-00-12-01 15-Apr-2011    hmk Patch cfitsio set up for windows
+ SConsFiles-00-12-00 14-Apr-2011    hmk Add in entries for catalogProducts and diffuseModels
+ SConsFiles-00-11-04 14-Apr-2011    jrb get correct version line in SConstruct
+ SConsFiles-00-11-03 14-Apr-2011    hmk add new i version of cfitsio external due to new symlinked library which includes version in name
+ SConsFiles-00-11-02 30-Mar-2011    jrb make it possible to get fixed f2c, needed for snowleopard only
+ SConsFiles-00-11-01 30-Mar-2011 glastrm fixed target architecture values
+ SConsFiles-00-11-00 29-Mar-2011 glastrm fixed target architecture values
+ SConsFiles-00-10-04 17-Mar-2011    jrb 1. add some externals 2. add option to set Windows target arch (32-bit or 64-bit) explicitly
+ SConsFiles-00-10-03 08-Mar-2011    jrb Change external name from ldf to LDF to match CMT naming
+ SConsFiles-00-10-02 07-Mar-2011    jrb Add entry for TMineExt 3.1.2
+ SConsFiles-00-10-01 03-Mar-2011    jrb minor changes needed for TMine-scons; add 2 G4 libraries to list for Windows only
+ SConsFiles-00-10-00 17-Feb-2011    jrb Add site-path field to python externals and store in construction variable; add top field to all externals and Export
+ SConsFiles-00-09-00 08-Feb-2011    jrb changes to Windows compile and link options; support for --variant=NONE
+ SConsFiles-00-08-00 01-Feb-2011    jrb New TMine external; support for -debug external versions; bug fixes
+ SConsFiles-00-07-05 03-Jan-2011    jrb Bug fix in generateScript on Windows
+ SConsFiles-00-07-04 30-Nov-2010    jrb additions to support new Gaudi; cosmetic clean-up
+ SConsFiles-00-07-03 05-Oct-2010    jrb Fix to _setup.bat to include external bin directories in PATH
+ SConsFiles-00-07-02 30-Sep-2010    jrb Fix typo in generateScript.py
+ SConsFiles-00-07-01 29-Sep-2010    jrb bug fix, clean-up for generateScript; remove obs. tool registerObjects
+ SConsFiles-00-07-00 28-Sep-2010    jrb New _setup arrangement: 1. Simplified pfiles 2. pfiles switch per container 3. use .bat on Windows
+ SConsFiles-00-06-06 23-Sep-2010    jrb add new iversion of obf external
+ SConsFiles-00-06-05 14-Sep-2010    jrb Revert allExternals to eliminate include path list; add obfSetup function to processExternals
+ SConsFiles-00-06-04 02-Sep-2010    jrb minor bug fixes for SConstruct, allExternals.scons
+ SConsFiles-00-06-03 17-Aug-2010    jrb 1. eliminate ld-path in swig external; write out externals if ld-path or bin-path defined. 2. Add a place to keep os-dependent fixed scripts needed to create _setup
+ SConsFiles-00-06-02 16-Aug-2010    jrb Fix a couple things in generated project files
+ SConsFiles-00-06-01 11-Aug-2010    jrb Windows: set wrapper lib extension to .pyd; embed manifests; fix path separator for pfiles in _setup.js
+ SConsFiles-00-06-00 11-Aug-2010    jrb Modify variant source copy strategy; add LDF_STATIC macro def to allExternals.scons
+ SConsFiles-00-05-07 12-Jul-2010 glastrm Tagging version of allExternals.scons that will have the swig distribution package built.
+ SConsFiles-00-05-06 30-Jun-2010    jrb add ROOT version 5.26.00a-gl3
+ SConsFiles-00-05-05 23-Jun-2010    jrb addLinkDeps tool; updates to allExternals for new versions and for GR support; misc. minor changes elsewhere
+ SConsFiles-00-05-04 10-Jun-2010    jrb include external include paths in rootcint command
+ SConsFiles-00-05-03 07-Jun-2010    jrb Better scheme for debug output; backwards compatible with SCons 1.2.0 on non-Windows platforms
+ SConsFiles-00-05-02 04-Jun-2010    jrb Bug fixes for project file-generating code
+ SConsFiles-00-05-01 19-Apr-2010    jrb Keep most of msvs.py from being parsed on non-Windows platforms
+ SConsFiles-00-05-00 16-Apr-2010    jrb updates for SCons 1.3.0. Not backwards compatible for Windows
+ SConsFiles-00-04-05 14-Apr-2010    jrb Add ROOT 5.26.00a to allExternals.scons
+ SConsFiles-00-04-04 05-Apr-2010 tstephen Added check so that jobOptions file is only included in the user release of GlastRelease and not the ScienceTools
+ SConsFiles-00-04-03 05-Mar-2010    jrb Allow install of includes without intervening named directory; intended only for special cases, such as building an external library
+ SConsFiles-00-04-02 04-Mar-2010    jrb Better way to compute default variant on Linux. Use only integer part of redhat release
+ SConsFiles-00-04-01 24-Feb-2010    jrb add addLinkDeps tool
+ SConsFiles-00-04-00 22-Feb-2010    jrb support linking on Linux properly
+ SConsFiles-00-03-04 16-Feb-2010    jrb Print node name in output
+ SConsFiles-00-03-03 05-Feb-2010    jrb updates to allExternals for ape, obf
+ SConsFiles-00-03-02 04-Feb-2010    jrb respect python modules; exclude .gz from developer build
+ SConsFiles-00-03-01 14-Jan-2010    jrb 1. Support 2nd include in externals. 2. Get ready for job options
+ SConsFiles-00-03-00 09-Dec-2009    jrb 1. Put project-file building code into production. 2. patches for ASP support
+ SConsFiles-00-02-01 02-Dec-2009    jrb New PFILES policy for _setup.* in batch
+                       jrb allow for alt. name of containerSettings dir;
+                           bug fixes to processExternals, generateScript
+ SConsFiles-00-02-00   ng Use containerSettings package
+                       jrb add doc/release.notes; processExternals bug fix;
+                           SConstruct, registerTargets bug fixes for
+                           Windows library dependencies
+ SConsFiles-00-01-08   ng,jrb Add generatePythonWrapper; other minor fixes   
+ */

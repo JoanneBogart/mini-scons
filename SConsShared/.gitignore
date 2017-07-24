@@ -1,0 +1,13 @@
+Linux-i686
+rh*_gcc*
+aclocal.m4
+config
+config.*
+configure
+libtool
+Makefile
+Makefile.in
+stamp-h*
+
+*.pyc
+build
