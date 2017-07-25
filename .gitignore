@@ -1,0 +1,11 @@
+lib
+bin
+exe
+/include
+redhat*
+sconsTools
+*.log
+/python
+/data
+/xml
+*.*~
